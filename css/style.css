@@ -1,0 +1,47 @@
+/* 청류폰트 */
+@font-face{
+	font-family:"416-Regular";
+	src:url("../font/231205_416-Regular.woff2");
+}
+
+h1, h2, h3, h4, h5, h6 {font-weight:normal}
+header, nav, section, article, aside, footer {display:block;}
+
+.regular_416 {
+    font-family:"416-Regular"
+}
+
+.test_img{
+    width: 10%;
+}
+
+* {box-sizing: border-box;}
+
+.img-comp-container {
+  position: relative;
+  height: 200px; /*should be the same height as the images*/
+}
+
+.img-comp-img {
+  position: absolute;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+}
+
+.img-comp-img img {
+  display: block;
+  vertical-align: middle;
+}
+
+.img-comp-slider {
+  position: absolute;
+  z-index: 9;
+  cursor: ew-resize;
+  /*set the appearance of the slider:*/
+  width: 40px;
+  height: 40px;
+  background-color: #2196F3;
+  opacity: 0.7;
+  border-radius: 50%;
+}
