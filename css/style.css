@@ -1,47 +1,48 @@
-/* 청류폰트 */
+
 @font-face{
 	font-family:"416-Regular";
 	src:url("../font/231205_416-Regular.woff2");
 }
 
+body{
+  margin: 0;
+  padding:0;
+  border:0;
+}
+
 h1, h2, h3, h4, h5, h6 {font-weight:normal}
 header, nav, section, article, aside, footer {display:block;}
 
-.regular_416 {
-    font-family:"416-Regular"
+.header{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  z-index:10000;
+  height:100px;
+  background-color: beige;
+  padding : 20px 60px 20px 60px;
 }
 
-.test_img{
-    width: 10%;
+.logo{
+  width: 160px;
+  height : 56.59px;
+  left : 0px;
 }
 
-* {box-sizing: border-box;}
-
-.img-comp-container {
-  position: relative;
-  height: 200px; /*should be the same height as the images*/
+.contents{
+  margin: 0;
+  padding: 0;
+  background-color: honeydew;
 }
 
-.img-comp-img {
-  position: absolute;
-  width: auto;
-  height: auto;
-  overflow: hidden;
-}
-
-.img-comp-img img {
-  display: block;
-  vertical-align: middle;
-}
-
-.img-comp-slider {
-  position: absolute;
-  z-index: 9;
-  cursor: ew-resize;
-  /*set the appearance of the slider:*/
-  width: 40px;
-  height: 40px;
-  background-color: #2196F3;
-  opacity: 0.7;
-  border-radius: 50%;
+.footer{
+  position:fixed;
+  bottom:0;
+  left:0;
+  width:100%;
+  z-index:10000;
+  min-width:1080px;
+  height:64px;
+  background-color: lavenderblush;
 }
