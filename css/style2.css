@@ -14,11 +14,11 @@ h1, h2, h3, h4, h5, h6 {font-weight:normal}
 header, nav, section, article, aside, footer {display:block;}
 
 .header{
-  position:fixed;
+  /* position:fixed; */
   top:0;
   left:0;
   width:100%;
-  z-index:10000;
+  /* z-index:10000; */
   min-width:1080px;
   height:64px;
   background-color: beige;
@@ -76,37 +76,120 @@ header, nav, section, article, aside, footer {display:block;}
   /*set the appearance of the slider:*/
   width: 40px;
   height: 40px;
-  /* background-color: #2196F3; */
-  background-image: url('../image/heart.png');
-  display: block;
-  opacity: 1;
+  background-color: #2196F3;
+  opacity: 0.7;
   border-radius: 50%;
 }
 
 .text_preview{
   font-family:"416-Regular";
   width: 50%;
-  height : 300px;
+  height : 40%;
   background-color: lightpink;
-  text-align:center;
 }
 
-.backimg{
-  width:150px;
-  height:150px;
+.ocean { 
+  height: 5%;
+  width:100%;
+  position:absolute;
+  bottom:100px;
+  left:0;
 }
 
-.background_img1{
-  background-image: url('../image/background1.jpg');
-  background-size: cover;
+.wave {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x; 
+  position: absolute;
+  top: -198px;
+  width: 6400px;
+  height: 198px;
+  animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+  transform: translate3d(0, 0, 0);
 }
 
-.background_img2{
-  background-image: url('../image/background2.jpg');
-  background-size: cover;
+.wave:nth-of-type(2) {
+  top: -175px;
+  animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
+  opacity: 3;
 }
 
-.background_img3{
-  background-image: url('../image/background3.jpg');
-  background-size: cover;
+@keyframes wave {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -1600px;
+  }
+}
+/* 
+@keyframes swell {
+  0%, 100% {
+    transform: translate3d(0,-25px,0);
+  }
+  50% {
+    transform: translate3d(0,5px,0);
+  }
+} */
+
+.sliding_txt{
+  /* background-color: #fff952; */
+  background-color: #b1dbab;
+  height: 130px;
+  width: 100%;
+  overflow: hidden;
+}
+
+@keyframes scroll-animation{
+  0%{
+    left: 0;
+  }
+  100%{
+    left: -100% /* 텍스트 width와 동일 */
+  }
+}
+
+.track{
+  position: relative;
+  width: 2800px;
+  animation: scroll-animation 20s linear infinite;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.track p{
+  color: black;
+  font-family:"416-Regular";
+  float: left;
+  width: 100%;
+  font-size: 50px;
+  text-align: center;
+}
+
+
+.scrolling_text {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  white-space: nowrap;
+}
+
+.text {
+  font-size: 80px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #3A1240;
+  animation: animate_text 30s linear infinite; /* The animation property */
+}
+
+.text span {
+  margin: 0 40px;
+}
+
+@keyframes animate_text {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-100%, 0, 0);
+  }
 }

@@ -8,10 +8,27 @@ body{
   margin: 0;
   padding:0;
   border:0;
+  overflow-x: hidden;
 }
 
-h1, h2, h3, h4, h5, h6 {font-weight:normal}
+h1, h2, h3, h4, h5, h6, a , p, span{font-weight:normal;  font-family:"416-Regular";}
 header, nav, section, article, aside, footer {display:block;}
+
+.navmenu{
+  color:black;
+  opacity: 30%;
+  font-weight: 400;
+}
+
+.copyright{
+  color:#FFFFFF;
+  font-size: 20px; font-weight: 400; line-height: 32px; letter-spacing: 0em;
+}
+
+.navmenu:hover{
+  color:#FFE100;
+  opacity: 100%;
+}
 
 .header{
   position:fixed;
@@ -20,29 +37,237 @@ header, nav, section, article, aside, footer {display:block;}
   width:100%;
   z-index:10000;
   height:100px;
-  background-color: beige;
+  /* background-color: beige; */
   padding : 20px 60px 20px 60px;
 }
 
+.header_right{
+  right:0;
+}
+
+.section1{
+  margin-top:7rem;
+}
+
+.section1_title{
+  color: #FFE100;
+  font-size: 53rem;
+  bottom:0;
+  margin-left: 10rem;
+}
+
+.header_left{
+  right:0;
+}
+
 .logo{
-  width: 160px;
-  height : 56.59px;
+  width: 10rem;
   left : 0px;
 }
 
 .contents{
   margin: 0;
   padding: 0;
-  background-color: honeydew;
 }
 
 .footer{
-  position:fixed;
+  margin-top : 10rem;
+  padding : 20px 60px 20px 60px;
   bottom:0;
   left:0;
   width:100%;
   z-index:10000;
   min-width:1080px;
-  height:64px;
-  background-color: lavenderblush;
+  height:84px;
+  background-color: #FFE100;
+}
+
+.logo2{
+  width: 160px;
+  height: 57px;
+  top: 11px;
+  left: 1680px;
+}
+
+
+.ocean { 
+  width:100%;
+  /* position:absolute; */
+  /* bottom:100px; */
+  left:0;
+  bottom:10rem;
+  position:relative;
+}
+
+.title2{
+  width:54.5rem;
+  float:right;
+}
+
+.title2 p{
+  color: black;
+  width:68rem;
+  z-index:500;
+  font-size:2.5rem;
+  text-align:left;
+  float:right;
+  margin-right:5rem;
+}
+
+.wave {
+  /* background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x;  */
+  background: url(../image/wave.svg) repeat-x; 
+  position: absolute;
+  /* top: -198px; */
+  width: 400rem;
+  height: 12.5rem;
+  animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+  transform: translate3d(0, 0, 0);
+  opacity:0.7;
+  bottom:0;
+}
+
+.wave:nth-of-type(2) {
+  background: url(../image/wave2.svg) repeat-x; 
+  /* top: -175px; */
+  animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
+  opacity:0.7;
+}
+
+@keyframes wave {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -1600px;
+  }
+}
+
+.section2{
+  margin-top:69.2rem;
+  text-align: center;
+}
+
+.title3{
+  width:100%;
+  display: inline-block;
+}
+
+.title3 p{
+  text-align:center;
+  color:black;
+  font-size:2.7rem;
+  width:76rem;
+  margin:auto;
+}
+
+.title4{
+  width:100%;
+  margin-top: 10rem;
+  display: inline-block;
+}
+
+.title4 div{
+  margin:auto;
+  width:76rem;
+}
+
+.title4 p{
+  font-size:16rem;
+  color: #FFE100;
+  text-align:left;
+  margin:auto;
+}
+
+.title5{
+  width:100%;
+  margin-top: 3rem;
+  display: inline-block;
+}
+
+.title5 div{
+  margin-left: 75rem;
+  width:35.5rem;
+}
+
+.title5 .p_title{
+  font-size:2.8rem;
+  color: black;
+  text-align:left;
+  margin:auto;
+}
+
+.title5 .p_content{
+  font-size:2rem;
+  color: black;
+  text-align:left;
+  margin:auto;
+}
+
+
+
+/*  */
+
+.scrolling_text {
+  margin-top: 10rem;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  white-space: nowrap;
+  background-color: #FFE100;
+}
+
+.text {
+  font-size: 20rem;
+  color: black;
+  animation: animate_text 30s linear infinite; /* The animation property */
+}
+
+@keyframes animate_text {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+.title6{
+  width:100%;
+  margin-top: 10rem;
+  display: inline-block;
+}
+
+.title6 div{
+  margin-left: 35rem;
+  width:35.5rem;
+}
+
+.title6 .p_title{
+  font-size:2.8rem;
+  color: black;
+  text-align:left;
+  margin:auto;
+}
+
+.title6 .p_content{
+  font-size:2rem;
+  color: black;
+  text-align:left;
+  margin:auto;
+}
+
+.title7{
+  width: 100%;
+  display:inline-block;
+  margin-top: 16rem;
+}
+
+.title7_div{
+  margin:auto;
+  width: 100rem;
+}
+
+.title7_div img{
+  width: 50rem;
 }
