@@ -37,7 +37,7 @@ header, nav, section, article, aside, footer {display:block;}
   width:100%;
   z-index:10000;
   height:100px;
-  /* background-color: beige; */
+  background-color: #ffffff;
   padding : 20px 60px 20px 60px;
 }
 
@@ -239,7 +239,7 @@ header, nav, section, article, aside, footer {display:block;}
 }
 
 .title6 div{
-  margin-left: 35rem;
+  margin-left: 30rem;
   width:35.5rem;
 }
 
@@ -257,17 +257,78 @@ header, nav, section, article, aside, footer {display:block;}
   margin:auto;
 }
 
+/* 비교 부분 */
+
 .title7{
   width: 100%;
   display:inline-block;
-  margin-top: 16rem;
 }
 
 .title7_div{
   margin:auto;
+  height: 25rem;
   width: 100rem;
+  justify-content : center;
+  display: flex;
 }
 
-.title7_div img{
-  width: 50rem;
+.img-comp-container {
+  position: relative;
+  margin-top: 16rem;
+  width: 62.5rem;
+}
+
+.img-comp-img {
+  /* margin:auto; */
+  width: 100rem;
+  position: absolute;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+}
+
+.img-comp-img img {
+  display: block;
+  /* height: 25rem;  */
+  width: 62.5rem;
+}
+
+.img-comp-slider {
+  position: absolute;
+  z-index: 9;
+  cursor: ew-resize;
+  /*set the appearance of the slider:*/
+  width: 2.5rem;
+  height: 2.5rem;
+  /* background-color: #2196F3; */
+  background-image: url(../image/compare_btn.png);
+  /* opacity: 0.7;
+  border-radius: 50%; */
+  background-size: cover;
+}
+
+
+.title8{
+  width:100%;
+  margin-top: 20rem;
+  display: inline-block;
+}
+
+.title8 div{
+  margin: auto;
+  width:72rem;
+}
+
+.title8 .p_title{
+  font-size:2.8rem;
+  color: black;
+  text-align:left;
+  margin:auto;
+}
+
+.title8 .p_content{
+  font-size:2rem;
+  color: black;
+  text-align:left;
+  margin:auto;
 }
