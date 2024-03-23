@@ -4,6 +4,10 @@
 	src:url("../font/231205_April16th-Promise.woff2");
 } */
 
+html{
+  scroll-behavior: smooth;
+}
+
 @font-face{
   font-family:"April16th-Life";
 	src:url("../font/April16th-Life.woff");
@@ -26,7 +30,7 @@ body{
   overflow-x: hidden;
 }
 
-h1, h2, h3, h4, h5, h6, a , p, span{font-weight:normal;  font-family:"April16th-Promise";}
+h1, h2, h3, h4, h5, h6, a , p, span, div{font-weight:normal;  font-family:"April16th-Promise";}
 header, nav, section, article, aside, footer {display:block;}
 
 .navmenu{
@@ -384,8 +388,9 @@ header, nav, section, article, aside, footer {display:block;}
 }
 
 .active{
-  background-color: #FFE100;
-  color : #ffffff;
+  background-color: #FFE100 !important;
+  color : #ffffff !important;
+  border : #FFE100 !important;
 }
 
 .preview_div{
@@ -416,4 +421,99 @@ header, nav, section, article, aside, footer {display:block;}
   align-items: center; */
   border-right: 0.1rem solid #CCCCCC;
   border-bottom: 0.1rem solid #CCCCCC;
+}
+
+.section3{
+  margin-top : 19.4rem;
+  text-align: center;
+}
+
+.section3 .p_title{
+  font-size : 8rem;
+}
+
+.section3 .p_content{
+  margin-top: 4rem;
+  font-size : 2.8rem;
+}
+
+.section3 .preview{
+  text-align: center;
+  margin-top: 8rem;
+  display: inline-block;
+}
+
+.preview_typing{
+  float: left;
+  text-align: center;
+  background-color: #FFFCE3;
+  width: 53.4rem;
+  height : 53.4rem;
+  margin: auto;
+  font-family: "April16th-Promise";
+  font-size: 4.8rem;
+  line-height : 49.4rem;
+  padding: 4rem;
+  margin-right : 2.2rem;
+}
+
+.left{
+  float:right;
+  margin-left : 2.2rem;
+  display: inline-block;
+}
+
+.left p{
+  font-size : 1.6rem;
+  color : #999999;
+  text-align: left;
+}
+
+.select_font{
+  text-align: left;
+  margin-right: 0.75rem;
+  display:inline-block;
+}
+
+.select_size{
+  display: inline-block;
+}
+
+.weight-box{
+  float: left;
+  border: 0.125rem solid #EFEFEF;
+  padding:  0px, 0.75rem, 0px, 0.75rem;
+  width: 3.438rem;
+  height: 2.25rem;
+  text-align: center;
+  color : #CCCCCC;
+  font-size: 1.25rem;
+  margin-right: 0.74rem;
+  text-align: center;
+  line-height : 2.25rem;
+  cursor: pointer;
+}
+
+.select_size div{
+  float:left;
+  margin-right: 0.156rem;
+}
+
+.div_range div{
+  margin-right: 0.75rem;
+}
+
+.select_size span{
+  font-size: 1rem;
+}
+
+#customRange1 {
+  background: linear-gradient(to right, #FFE100 0%, #FFE100 50%, #FFE100 50%, #FFE100 100%);
+  height : 0.2rem;
+  width: 13.3rem;
+  outline: none;
+  transition: background 450ms ease-in;
+  -webkit-appearance: none;
+  accent-color: #FFE100;
+  margin-top: 0.9rem;
 }

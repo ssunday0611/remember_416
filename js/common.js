@@ -151,4 +151,10 @@ $(document).ready(function () {
     $(this).addClass("active");
     $(".item").css("font-family",$(this).attr("font-weight"));
   });
+
+  $(".weight-box").on("click", function () {
+    $(".weight-box").removeClass("active");
+    $(this).addClass("active");
+    $(".item").css("font-family",$(this).attr("font-weight"));
+  });
 });
