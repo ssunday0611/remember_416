@@ -56,7 +56,7 @@ header, nav, section, article, aside, footer {display:block;}
   width:100%;
   z-index:10000;
   height:100px;
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
   padding : 20px 60px 20px 60px;
 }
 
@@ -429,32 +429,34 @@ header, nav, section, article, aside, footer {display:block;}
 }
 
 .section3 .p_title{
-  font-size : 8rem;
+  font-size : 7rem;
 }
 
 .section3 .p_content{
   margin-top: 4rem;
-  font-size : 2.8rem;
+  font-size : 2.5rem;
 }
 
 .section3 .preview{
   text-align: center;
   margin-top: 8rem;
   display: inline-block;
+  height : 40rem;
 }
 
 .preview_typing{
   float: left;
   text-align: center;
   background-color: #FFFCE3;
-  width: 53.4rem;
-  height : 53.4rem;
+  width: 40rem;
+  height : 40rem;
   margin: auto;
   font-family: "April16th-Promise";
-  font-size: 4.8rem;
-  line-height : 49.4rem;
-  padding: 4rem;
+  font-size: 4.5rem;
+  line-height : 40rem;
   margin-right : 2.2rem;
+  border : 0.125rem solid #DDDDDD;
+  background-size: cover;
 }
 
 .left{
@@ -463,7 +465,7 @@ header, nav, section, article, aside, footer {display:block;}
   display: inline-block;
 }
 
-.left p{
+.left .title{
   font-size : 1.6rem;
   color : #999999;
   text-align: left;
@@ -492,6 +494,7 @@ header, nav, section, article, aside, footer {display:block;}
   text-align: center;
   line-height : 2.25rem;
   cursor: pointer;
+  border-radius: 0.2rem;
 }
 
 .select_size div{
@@ -516,4 +519,103 @@ header, nav, section, article, aside, footer {display:block;}
   -webkit-appearance: none;
   accent-color: #FFE100;
   margin-top: 0.9rem;
+}
+
+.second{
+  margin-top: 3.313rem;
+}
+
+.select_background{
+  display:inline-block;
+  width: 100%;
+}
+
+.background-box{
+  width: 8rem;
+  height: 8rem;
+  float:left;
+}
+
+#img1{
+  background-image: url(../image/background_img1.png);
+  background-size: cover;
+  margin-right: 0.792rem;
+}
+
+#img2{
+  background-image: url(../image/background_img2.png);
+  background-size: cover;
+  margin-right: 0.792rem;
+}
+
+#img3{
+  background-image: url(../image/background_img3.png);
+  background-size: cover;
+  margin-right: 0.792rem;
+}
+
+#img4{
+  background-image: url(../image/background_img4.png);
+  background-size: cover;
+  margin-right: 0.792rem;
+}
+
+.active2{
+  border : 0.125rem solid #FFE100;
+}
+
+.background_img_txt{
+  width : 100%;
+  margin-top:0.75rem;
+  display:inline-block;
+}
+
+.background_img_txt p{
+  width: 8rem;
+  height: 8rem;
+  float:left;
+  margin-right: 0.792rem;
+  font-size : 1.25rem;
+  color: #CCCCCC;
+}
+
+.third{
+  margin-top:4.875rem;
+  width: 100%;
+}
+
+.third_1{
+  display:inline-block;
+}
+
+.save{
+  float:left;
+  width: 23.625rem;
+  height : 6rem;
+  background-color:#FFE100;
+  color: black;
+  line-height:6rem;
+  font-size:2.5rem;
+  margin-right:1.75rem;
+}
+
+.reset{
+  float:left;
+  width: 6rem;
+  height : 6rem;
+  border : 0.125rem solid #DDDDDD;
+  color: #DDDDDD;
+  line-height:6rem;
+  font-size:2.5rem;
+}
+
+.upload{
+  float:left;
+  width:27.375rem;
+  height : 6rem;
+  line-height : 6rem;
+  border : 0.125rem solid #FFE100;
+  color: #000000;
+  line-height:6rem;
+  font-size:2.5rem;
 }

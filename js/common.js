@@ -155,6 +155,29 @@ $(document).ready(function () {
   $(".weight-box").on("click", function () {
     $(".weight-box").removeClass("active");
     $(this).addClass("active");
-    $(".item").css("font-family",$(this).attr("font-weight"));
+    $(".preview_typing").css("font-family",$(this).attr("font-weight"));
   });
+
+  $(".background-box").on("click", function () {
+    $(".background-box").removeClass("active2");
+    $(this).addClass("active2");
+    if($(this).attr("img-src") != "imgUpload"){
+      $(".preview_typing").css("background-image",  "url("+$(this).attr("img-src")+".png)" );
+    }
+    //직접 업로드
+    else{
+      $('#file').click();
+    }
+  });
+
+  $("#file").on("change", function() {
+    $(".preview_typing").css("background-image",'none');
+    var file = event.target.files[0];
+    var reader = new FileReader(); 
+    reader.onload = function(e) {
+      $(".preview_typing").css({"background-image":"url("+ e.target.result+")"}); 				
+    }
+    reader.readAsDataURL(file);
+  });
+  
 });
