@@ -464,6 +464,7 @@ header, nav, section, article, aside, footer {display:block;}
   display: flex;
   flex-direction: column;
   justify-content: center;
+  overflow:hidden;
 }
 
 
@@ -544,8 +545,24 @@ header, nav, section, article, aside, footer {display:block;}
 }
 
 .button_div{
-  margin-top: 4.875rem;
+  margin-top: 1.5rem;
   display: flex;
+}
+
+.button_div2{
+  margin-top: 0.75rem;
+  display: flex;
+}
+
+.upload{
+  float:left;
+  width:34.625rem;
+  height : 6rem;
+  line-height : 6rem;
+  border : 0.125rem solid #FFE100;
+  color: #000000;
+  line-height:6rem;
+  font-size:1.5rem;
 }
 
 .background-box{
@@ -599,12 +616,12 @@ header, nav, section, article, aside, footer {display:block;}
 
 .save{
   float:left;
-  width: 23.625rem;
+  width: 26.625rem;
   height : 6rem;
   background-color:#FFE100;
   color: black;
   line-height:6rem;
-  font-size:2.5rem;
+  font-size:1.5rem;
   margin-right:1.75rem;
 }
 
@@ -615,24 +632,24 @@ header, nav, section, article, aside, footer {display:block;}
   border : 0.125rem solid #DDDDDD;
   color: #DDDDDD;
   line-height:6rem;
-  font-size:2.5rem;
+  font-size:1.5rem;
 }
-
-/*
-.upload{
-  float:left;
-  width:27.375rem;
-  height : 6rem;
-  line-height : 6rem;
-  border : 0.125rem solid #FFE100;
-  color: #000000;
-  line-height:6rem;
-  font-size:2.5rem;
-} */
-
 
 /* 다운로드 */
 .section3{
   margin-top : 12.125rem;
   text-align: center;
+  width:100%;
+}
+
+.section3_div{
+  width : 62.5rem;
+  margin:auto;
+}
+
+.section3_div > .title{
+  font-size: 3.75rem;
+  color: #000000;
+  float:left;
+  margin-left:0px;
 }
