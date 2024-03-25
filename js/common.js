@@ -179,5 +179,9 @@ $(document).ready(function () {
     }
     reader.readAsDataURL(file);
   });
+
+  $("#customRange1").on("input change",function () {
+    $('.preview_typing').css("font-size", $(this).val() + "px");
+  });
   
 });
