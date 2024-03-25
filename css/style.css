@@ -1,4 +1,4 @@
-/* 
+/*
 @font-face{
 	font-family:"April16th-Promise";
 	src:url("../font/231205_April16th-Promise.woff2");
@@ -112,7 +112,7 @@ header, nav, section, article, aside, footer {display:block;}
   width: 100%;
 }
 
-.ocean { 
+.ocean {
   width:100%;
   /* position:absolute; */
   /* bottom:100px; */
@@ -139,7 +139,7 @@ header, nav, section, article, aside, footer {display:block;}
 
 .wave {
   /* background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x;  */
-  background: url(../image/wave.svg) repeat-x; 
+  background: url(../image/wave.svg) repeat-x;
   position: absolute;
   /* top: -198px; */
   width: 400rem;
@@ -151,7 +151,7 @@ header, nav, section, article, aside, footer {display:block;}
 }
 
 .wave:nth-of-type(2) {
-  background: url(../image/wave2.svg) repeat-x; 
+  background: url(../image/wave2.svg) repeat-x;
   /* top: -175px; */
   animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
   opacity:0.7;
@@ -367,12 +367,12 @@ header, nav, section, article, aside, footer {display:block;}
   margin-bottom: 10%;
   text-align: center;
 }
- 
+
 .btn_div{
   display: inline-block;
   text-align: center;
 }
- 
+
 .preview_btn{
   float: left;
   width: 4.563rem;
@@ -438,11 +438,15 @@ header, nav, section, article, aside, footer {display:block;}
 }
 
 .section3 .preview{
+  display: flex;
   text-align: center;
-  margin-top: 8rem;
-  display: inline-block;
+  margin: 8rem auto auto;
   height : 40rem;
   width: 80rem;
+}
+
+.section3 .preview > div{
+  flex: 1;
 }
 
 .preview_typing{
@@ -454,11 +458,14 @@ header, nav, section, article, aside, footer {display:block;}
   margin: auto;
   font-family: "April16th-Promise";
   font-size: 4.5rem;
-  line-height : 40rem;
   margin-right : 2.2rem;
   border : 0.125rem solid #DDDDDD;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
+
 
 .left{
   margin-left : 2.2rem;
@@ -471,14 +478,16 @@ header, nav, section, article, aside, footer {display:block;}
   text-align: left;
 }
 
+.select_box {
+  display: flex;
+}
+
 .select_font{
   text-align: left;
   margin-right: 0.75rem;
-  display:inline-block;
 }
 
 .select_size{
-  display: inline-block;
 }
 
 .weight-box{
@@ -531,13 +540,12 @@ header, nav, section, article, aside, footer {display:block;}
 }
 
 .select_background{
-  display:inline-block;
   margin-top: 3.313rem;
 }
 
 .button_div{
-  display:inline-block;
   margin-top: 4.875rem;
+  display: flex;
 }
 
 .background-box{
@@ -610,7 +618,7 @@ header, nav, section, article, aside, footer {display:block;}
   font-size:2.5rem;
 }
 
-/* 
+/*
 .upload{
   float:left;
   width:27.375rem;
