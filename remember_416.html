@@ -7,6 +7,7 @@
         <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
         <script type="text/javascript" src="./js/common.js"></script>
+        <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
     </head>
     <body>
@@ -105,7 +106,7 @@
             <p class="p_title">기억은 힘이 세지</p>
             <p class="p_content">원하는 카드를 골라 직접 메시지를 작성해보세요.<br>완성된 이미지를 다운로드 받아 #기억은힘이세지 10주기 캠페인에 참여할 수 있어요.</p>
             <div class="preview">
-              <div class="preview_typing" contenteditable>
+              <div class="preview_typing" id="preview_typing" contenteditable>
                 바다는 가라앉지 않는다.
               </div>
 
@@ -126,7 +127,7 @@
                         <span>작게</span>
                       </div>
                       <div class="div_range">
-                        <input type="range" id="customRange1">
+                        <input type="range" id="customRange1"  min="0" max="100" step="10">
                       </div>
                       <div>
                         <span>크게</span>
@@ -157,7 +158,7 @@
                   <div class="reset" id="reset">초기화</div>
                 </div>
                 <div class="button_div2">
-                  <div class="upload" id="upload">업로드 하러가기</div>
+                  <a href="https://www.instagram.com/explore/tags/%EA%B8%B0%EC%96%B5%EC%9D%80%ED%9E%98%EC%9D%B4%EC%84%B8%EC%A7%80/"><div class="upload" id="upload">업로드 하러가기</div></a>
                 </div>
               </div>
             </div>
@@ -165,11 +166,46 @@
 
           <div id="download" class="section3">
             <div class="section3_div">
-              <p class="title">폰트 내려받기</p>
-              <div class="left">
-                <p class="font_format">폰트포멧</p>
-                <div>.otf</div>
+              <div class="title_div">
+                <p class="title">폰트 내려받기</p>
               </div>
+              <div class="download_div">
+                <div class="left">
+                  <p class="font_format">폰트포멧</p>
+                  <a href="./font/416_otf.zip"><div class="otf_btn"></div></a>
+                  <a href="./font/416_ttf.zip"><div class="ttf_btn"></div></a>
+                  <div class="woff">
+                    <a href="./font/416_woff.zip"><div class="woff_btn"></div></a>
+                    <a href="./font/416_woff2.zip"><div class="woff2_btn"></div></a>
+                  </div>
+                </div>
+                <div class="right">
+                  <p class="font_format">폰트구성</p>
+                  <p class="font_spec">생명: 한글 2,780자, 라틴 문자 52자, 숫자 10자, 문장 부호 205자</p>
+                  <p class="font_spec">약속: 한글 2,780자, 라틴 문자 52자, 숫자 10자, 문장 부호 205자</p>
+                  <p class="font_spec">안전: 한글 11,172자, 라틴 문자 52자, 숫자 10자, 문장 부호 205자</p>
+                  <br><br>
+                  <p class="font_format">지원 포맷</p>
+                  <p class="font_spec">otf, ttf, woff, woff2</p>
+                  <br><br>
+                  <p class="font_format">권장 환경</p>
+                  <p class="font_spec">사월십육일체는 컬러 데이터 속성까지 포함하는 SVG(Scalable Vector</p>
+                  <p class="font_spec">Graphics) 형식의 폰트입니다. 컬러 폰트가 구현되지 않는 경우 아래의 권</p>
+                  <p class="font_spec">장 환경을 확인하시고 업데이트를 진행해 주세요.</p>
+                  <p class="font_spec">• Windows 10, macOS 10.14 Mojave 이상</p>
+                  <p class="font_spec">• Adobe Apps: InDesign CC 2019+, Illustrator CC 2018+,</p>
+                  <p class="font_spec">&nbsp; &nbsp; Photoshop CC 2017+ 이상, Pages 6.0, Numbers 4.0, and</p>
+                  <p class="font_spec">&nbsp; &nbsp; Keynote 7.0 이상</p>
+                  <p class="font_spec">• MS office 365: Word, Powerpoint 가능</p>
+                  <br><br>
+                  <p class="font_format">라이선스</p>
+                  <p class="font_spec">• «사월십육일체»는 누구나 사용할 수 있는 무료폰트로 영리적, 비영리적 </p>
+                  <p class="font_spec">&nbsp; &nbsp; 목적으로 자유롭게 활용이 가능합니다.</p>
+                  <p class="font_spec">• «사월십육일체»의 지식재산권은 4.16재단에 있으며 폰트 파일은 유로</p>
+                  <p class="font_spec">&nbsp; &nbsp; 로 판매할 수 없습니다.*</p>
+                </div>
+              </div>
+              
             </div>
           </div>
         </div>

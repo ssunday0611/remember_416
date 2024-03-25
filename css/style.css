@@ -488,9 +488,6 @@ header, nav, section, article, aside, footer {display:block;}
   margin-right: 0.75rem;
 }
 
-.select_size{
-}
-
 .weight-box{
   float: left;
   border: 0.125rem solid #EFEFEF;
@@ -643,13 +640,88 @@ header, nav, section, article, aside, footer {display:block;}
 }
 
 .section3_div{
-  width : 62.5rem;
+  width : 80rem;
   margin:auto;
 }
 
-.section3_div > .title{
+.title_div{
+  width:100%;
+  height:100%;
+  text-align: left;
+}
+
+.title_div > .title{
   font-size: 3.75rem;
   color: #000000;
-  float:left;
   margin-left:0px;
+}
+
+.font_format{
+  font-size:1.5rem;
+  color: #999999;
+  text-align: left;
+}
+
+.download_div{
+  margin-top : 3.75rem;
+  width : 80rem;
+  display:inline-block;
+}
+
+.download_div > .left{
+  float:left;
+  width: 36rem;
+  height: 12.75rem;
+  text-align: left;
+  margin-left: 0px;
+  margin-right:8rem;
+}
+
+.otf_btn{
+  background-image: url(../image/otf_btn.png);
+  background-size: cover;
+  width: 22.188rem;
+  height: 3.75rem;
+}
+
+.ttf_btn{
+  background-image: url(../image/ttf_btn.png);
+  background-size: cover;
+  width: 22.188rem;
+  height: 3.75rem;
+  margin-top:0.75rem;
+}
+
+.download_div > .right{
+  float:left;
+  width: 36rem;
+ 
+}
+
+.woff{
+  display:inline-block;
+  margin-top:0.75rem;
+}
+
+.woff_btn{
+  float:left;
+  background-image: url(../image/woff_btn.png);
+  background-size: cover;
+  width: 10.719rem;
+  height: 3.75rem;
+  margin-right: 0.75rem;
+}
+
+.woff2_btn{
+  float:left;
+  background-image: url(../image/woff2_btn.png);
+  background-size: cover;
+  width: 10.719rem;
+  height: 3.75rem;
+}
+
+.font_spec{
+  color:#000000;
+  font-size: 1.4rem;
+  text-align: left;
 }

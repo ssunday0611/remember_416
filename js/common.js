@@ -175,7 +175,8 @@ $(document).ready(function () {
     var file = event.target.files[0];
     var reader = new FileReader(); 
     reader.onload = function(e) {
-      $(".preview_typing").css({"background-image":"url("+ e.target.result+")"}); 				
+      $(".preview_typing").css({"background-image":"url("+ e.target.result+")"}); 			
+      $(".preview_typing").setAttribute('crossorigin', 'anonymous');	
     }
     reader.readAsDataURL(file);
   });
@@ -183,5 +184,40 @@ $(document).ready(function () {
   $("#customRange1").on("input change",function () {
     $('.preview_typing').css("font-size", $(this).val() + "px");
   });
-  
+
+  $("#customRange1").on("input change",function () {
+    $('.preview_typing').css("font-size", $(this).val() + "px");
+  });
+
+  //초기화
+  $("#reset").on("click", function () {
+    $(".preview_typing").text("바다는 가라앉지 않는다.");
+    $('.preview_typing').css("background-color", "#FFFCE3");
+    $('.preview_typing').css("background-image", "");
+    $('.preview_typing').css("font-family", "April16th-Promise");
+    $('.preview_typing').css("font-size", "4.5rem");
+    $('.weight-box').removeClass("active");
+    $('.life_btn').addClass("active");
+    $("#customRange1").val("50");
+  });
+
+  $("#save").on("click", function () {
+    downImg();
+  });
+
+  function downImg(){
+    html2canvas ($("#preview_typing") [0]).then(function (canvas) {
+      var myImage = canvas.toDataURL();
+      downloadURI(myImage, "416_image.png");
+    });
+  }
+
+  function downloadURI(uri, name){
+    var link = document.createElement ("a")
+    link.download = name;
+    link.href = uri;
+    document.body.appendChild(link);
+    link.click();
+  }
+
 });
