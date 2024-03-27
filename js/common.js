@@ -222,100 +222,46 @@ $(document).ready(function () {
 
 });
 
+// const slider2 = document.querySelector('#slider');
+// const cards = document.querySelectorAll('.slide');
+// let currentIndex = 0;
+// function slideNext() {
+//   currentIndex++;
+//   if (currentIndex >= cards.length - 2) { // 마지막 카드 이후 첫 번째 카드로 이동
+//     currentIndex = 0;
+//   }
+//   const offset = currentIndex * (cards[0].offsetWidth + 20); // 카드 너비와 마진 합산
+//   slider2.style.transform = `translateX(-${offset}px)`;
+// }
 
-//슬라이더
-var container = document.getElementById('container')
-var slider = document.getElementById('slider');
-var slides = document.getElementsByClassName('slide').length;
-var buttons = document.getElementsByClassName('btn');
+// if (direction === 1) {
+//   $('.slide:first').before($('.slide:last'));
+// } else if (direction === -1) {
+//   $('.slide:last').after($('.slide:first'));
+// }
 
+// setInterval(slideNext, 3000);
 
-var currentPosition = 0;
-var currentMargin = 0;
-var slidesPerPage = 0;
-var slidesCount = slides - slidesPerPage;
-var containerWidth = container?.offsetWidth;
-var prevKeyActive = false;
-var nextKeyActive = true;
-
-window.addEventListener("resize", checkWidth);
-
-function checkWidth() {
-    containerWidth = container?.offsetWidth;
-    setParams(containerWidth);
-}
-
-function setParams(w) {
-    if (w < 551) {
-        slidesPerPage = 1;
-    } else {
-        if (w < 901) {
-            slidesPerPage = 2;
-        } else {
-            if (w < 1101) {
-                slidesPerPage = 3;
-            } else {
-                slidesPerPage = 4;
-            }
-        }
-    }
-    slidesCount = slides - slidesPerPage;
-    if (currentPosition > slidesCount) {
-        currentPosition -= slidesPerPage;
-    };
-    currentMargin = - currentPosition * (100 / slidesPerPage);
-    slider.style.marginLeft = currentMargin + '%';
-    if (currentPosition > 0) {
-        buttons[0].classList.remove('inactive');
-    }
-    if (currentPosition < slidesCount) {
-        buttons[1].classList.remove('inactive');
-    }
-    if (currentPosition >= slidesCount) {
-        buttons[1].classList.add('inactive');
-    }
-}
-
-setParams();
-
-function slideRight() {
-    if (currentPosition != 0) {
-        slider.style.marginLeft = currentMargin + (100 / slidesPerPage) + '%';
-        currentMargin += (100 / slidesPerPage);
-        currentPosition--;
-    };
-    if (currentPosition === 0) {
-        buttons[0].classList.add('inactive');
-    }
-    if (currentPosition < slidesCount) {
-        buttons[1].classList.remove('inactive');
-    }
-};
-
-function slideLeft() {
-    if (currentPosition != slidesCount) {
-        slider.style.marginLeft = currentMargin - (100 / slidesPerPage) + '%';
-        currentMargin -= (100 / slidesPerPage);
-        currentPosition++;
-    };
-    if (currentPosition == slidesCount) {
-        buttons[1].classList.add('inactive');
-    }
-    if (currentPosition > 0) {
-        buttons[0].classList.remove('inactive');
-    }
-};
-
-const slider2 = document.querySelector('#slider');
-const cards = document.querySelectorAll('.slide');
-let currentIndex = 0;
-function slideNext() {
-  currentIndex++;
-  if (currentIndex >= cards.length - 2) { // 마지막 카드 이후 첫 번째 카드로 이동
-    currentIndex = 0;
+$(document).ready(function () {
+  //you can set this, as long as it's not greater than the slides length
+  var show = 3;
+  //calculate each slides width depending on how many you want to show
+  var w = $('#slider').width() / show;
+  var l = $('.slide').length;
+  
+  //set each slide width
+  $('.slide').width("45.5rem");
+  //set the container width to fix the animation and make it look sliding
+  $('#slide-container').width(w * l)
+  
+  function slider() {
+      $('.slide:first-child').animate({
+          marginLeft: -w //hide the first slide on the left
+      }, 'slow', function () {
+          //once completely hidden, move this slide next to the last slide
+          $(this).appendTo($(this).parent()).css({marginLeft: 0});
+      });
   }
-  const offset = currentIndex * (cards[0].offsetWidth + 20); // 카드 너비와 마진 합산
-  slider2.style.transform = `translateX(-${offset}px)`;
-}
-
-setInterval(slideNext, 3000);
+  //use setInterval to do the timed execution and animation
+  var timer = setInterval(slider, 2000);
+});

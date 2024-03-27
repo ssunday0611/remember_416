@@ -41,7 +41,9 @@ header, nav, section, article, aside, footer {display:block;}
 
 .copyright{
   color:#FFFFFF;
-  font-size: 20px; font-weight: 400; line-height: 32px; letter-spacing: 0em;
+  font-size: 2rem;
+  margin-top : 2.4rem;
+  margin-left: 6rem;
 }
 
 .navmenu:hover{
@@ -55,9 +57,8 @@ header, nav, section, article, aside, footer {display:block;}
   left:0;
   width:100%;
   z-index:10000;
-  height:100px;
-  /* background-color: #ffffff; */
-  padding : 20px 60px 20px 60px;
+  height:10rem;
+  padding: 2rem 6rem 2rem 6rem;
 }
 
 .header_right{
@@ -65,7 +66,7 @@ header, nav, section, article, aside, footer {display:block;}
 }
 
 .section1{
-  margin-top:7rem;
+  margin-top: 33rem;
 }
 
 .section1_title{
@@ -90,22 +91,21 @@ header, nav, section, article, aside, footer {display:block;}
 }
 
 .footer{
-  margin-top : 10rem;
-  padding : 20px 60px 20px 60px;
   bottom:0;
   left:0;
   width:100%;
   z-index:10000;
   min-width:1080px;
-  height:84px;
+  height: 8rem;
   background-color: #FFE100;
 }
 
 .logo2{
-  width: 160px;
-  height: 57px;
-  top: 11px;
-  left: 1680px;
+  width: 12rem;
+  text-align: center;
+  float:right;
+  margin-top : 2rem;
+  margin-right: 6rem;
 }
 
 .main_video video{
@@ -266,8 +266,9 @@ header, nav, section, article, aside, footer {display:block;}
 }
 
 .title6 div{
-  margin-left: 30rem;
-  width:35.5rem;
+  /* margin-left: 30rem; */
+  margin:auto;
+  width:72rem;
 }
 
 .title6 .p_title{
@@ -728,85 +729,21 @@ header, nav, section, article, aside, footer {display:block;}
 
 
 /* 슬라이더 */
-#container {
+
+#slider {
+  margin-top: 8rem;
   height: 45.5rem;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  display: grid ;
-  place-items: center
+  width: 130%;
+  overflow:hidden;
+  margin-left: -20rem;
+  margin-bottom : 4rem;
 }
 
-#slider-container {
-  height: 45.5rem;
-  width: 100%;
-  max-width: 100%;
-  position: relative;
-  overflow: hidden;
-}
-
-#slider-container #slider {
-  display: flex;
-  width: 1000%;
-  height: 100%; 
-  transition: all .5s;
-}
-
-#slider-container #slider .slide {
-  height: 90%;
-  margin: auto 10px;
-  display: grid;
-  place-items: center;
+.slide {
+  width:45.5rem;
+  height:45.5rem;
+  float:left;
+  text-align:center;
+  margin-right: 2rem;
   background-size: cover;
-}
-
-@media only screen and (min-width: 1920px) {
-  #slider-container #slider .slide {
-    /* width: calc(2.5% - 20px); */
-    width: calc(25vw - 40px);
-    height:calc(25vw - 40px);
-  }
-}
-
-@media only screen and (max-width: 1920px) {
-  #slider-container #slider .slide {
-    /* width: calc(3.3333333% - 20px); */
-    width: calc(25vw - 40px);
-    height:calc(25vw - 40px);
-  }
-}
-
-@media only screen and (max-width: 375px) {
-  #slider-container #slider .slide {
-    /* width: calc(5% - 20px); */
-    width: 21.9rem;
-    height:21.9rem;
-  }
-}
-
-#slider-container .btn {
-  position: absolute;
-  top: calc(50% - 30px);
-  height: 30px;
-  width: 30px;
-  border-left: 8px solid pink;
-  border-top: 8px solid pink;
-}
-
-#slider-container .btn:hover {
-  transform: scale(1.2);
-}
-
-#slider-container .btn.inactive {
-  border-color: rgb(153, 121, 126)
-}
-
-#slider-container .btn:first-of-type {
-  transform: rotate(-45deg);
-  left: 10px
-}
-
-#slider-container .btn:last-of-type {
-  transform: rotate(135deg);
-  right: 10px;
 }
