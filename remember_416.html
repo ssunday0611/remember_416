@@ -16,7 +16,7 @@
             <img src="./image/logo.png" class="logo">
           </div>
           <nav class="navbar navbar-light bg-light">
-            <a class="navbar-brand navmenu" href="#home">홈</a>
+            <a class="navbar-brand navmenu" onClick="javascript:window.scrollTo(0,0)">홈</a>
             <a class="navbar-brand navmenu" href="#introduce">소개</a>
             <a class="navbar-brand navmenu" href="#campaign">캠페인</a>
             <a class="navbar-brand navmenu" href="#download">내려받기</a>
@@ -30,9 +30,7 @@
                 <source src="./image/main.mp4" type="video/mp4">
               </video>
             </div>
-          </div>
-
-          
+          </div>          
           <div id="home" class="section1_1">
             <div class="title2">
               <p>2024년 4월 16일, 세월호 참사가 어느새 10주기를 맞이합니다. 우리는 “참사 이후는 달라져야 한다”는 다짐을 기억하며, 4월 16일의 노란 리본을 기억합니다. 10년이라는 시간은 무언가를 잊을 만큼 긴 시간이지만, 우리는 기억은 힘이 세다는 것을 알고 있습니다. 4.16재단은 기억의 힘으로 생명이 존중받는 안전한 사회를 만들어 갑니다.</p>
@@ -52,12 +50,12 @@
                   </video>
                 </div>
               </div>
-              <!-- <div class="title5">
+              <div class="title5">
                 <div class="title5_div">
                   <p class="p_title">획의 특징</p>
                   <p class="p_content">«사월십육일체»는 리본이 연결되는 모습을 획의 특징으로 형상화하였습니다. 특히 'ㄱ', 'ㄴ', 'ㅂ' 등의 자음에서 리본이 접히는 듯한 인상을 찾아볼 수 있습니다.</p>
                 </div>
-              </div> -->
+              </div>
               <div class="scrolling_text">
                 <div class="text">
                     <span>나와 같은 마음인 사람을 발견했다는 데서 오는 반가움을 느끼는 것이다.</span>
@@ -93,8 +91,8 @@
               <div class="title9">
                 <div>
                   <div class="btn_div">
-                      <div class="preview_btn life_btn" font-weight="April16th-Life"><span>생명</span></div>
-                      <div class="preview_btn promise_btn active" font-weight="April16th-Promise"><span>약속</span></div>
+                      <div class="preview_btn life_btn active" font-weight="April16th-Life"><span>생명</span></div>
+                      <div class="preview_btn promise_btn" font-weight="April16th-Promise"><span>약속</span></div>
                       <div class="preview_btn safety_btn" font-weight="April16th-Safety"><span>안전</span></div>
                   </div>
                 </div>
@@ -111,7 +109,7 @@
               <p class="p_content">원하는 카드를 골라 직접 메시지를 작성해보세요.<br>완성된 이미지를 다운로드 받아 #기억은힘이세지 10주기 캠페인에 참여할 수 있어요.</p>
               <div class="preview">
                 <div class="preview_typing" id="preview_typing" contenteditable>
-                  바다는 가라앉지 않는다.
+                  바다에도 봄이 온다
                 </div>
 
                 <div class="left">
@@ -119,8 +117,8 @@
                     <div class="select_font">
                       <p class="title">폰트 웨이트</p>
                       <div>
-                        <div class="weight-box life_btn" font-weight="April16th-Life">생명</div>
-                        <div class="weight-box promise_btn active" font-weight="April16th-Promise">약속</div>
+                        <div class="weight-box life_btn active" font-weight="April16th-Life">생명</div>
+                        <div class="weight-box promise_btn" font-weight="April16th-Promise">약속</div>
                         <div class="weight-box safety_btn" font-weight="April16th-Safety">안전</div>
                       </div>
                     </div>
@@ -162,7 +160,7 @@
                     <div class="reset" id="reset">초기화</div>
                   </div>
                   <div class="button_div2">
-                    <a href="https://www.instagram.com/explore/tags/%EA%B8%B0%EC%96%B5%EC%9D%80%ED%9E%98%EC%9D%B4%EC%84%B8%EC%A7%80/"><div class="upload" id="upload">업로드 하러가기</div></a>
+                    <a target="_blank" href="https://www.instagram.com/explore/tags/%EA%B8%B0%EC%96%B5%EC%9D%80%ED%9E%98%EC%9D%B4%EC%84%B8%EC%A7%80/"><div class="upload" id="upload">업로드 하러가기</div></a>
                   </div>
                 </div>
               </div>
@@ -177,7 +175,8 @@
                   <div class="left">
                     <p class="font_format">폰트포멧</p>
                     <a href="./font/416_otf.zip"><div class="otf_btn"></div></a>
-                    <a href="./font/416_ttf.zip"><div class="ttf_btn"></div></a>
+                    <a href="./font/416_ttf.zip"><div class="ttf_btn tooltip2"><span class="tooltiptext">한컴오피스, 구버전 MS오피스 등 일부의 앱은 컬러 폰트 기술을
+                      지원하지 않아, 컬러가 구현되지 않을 수 있습니다.</span></div></a>
                     <div class="woff">
                       <a href="./font/416_woff.zip"><div class="woff_btn"></div></a>
                       <a href="./font/416_woff2.zip"><div class="woff2_btn"></div></a>

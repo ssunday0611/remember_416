@@ -55,7 +55,7 @@ header, nav, section, article, aside, footer {display:block;}
   position:fixed;
   top:0;
   left:0;
-  width:100%;
+  width:100vw;
   z-index:10000;
   height:10rem;
   padding: 2rem 6rem 2rem 6rem;
@@ -104,9 +104,11 @@ header, nav, section, article, aside, footer {display:block;}
 .footer{
   bottom:0;
   left:0;
-  width:100%;
+  width:100vw;
   z-index:10000;
+  /*
   min-width:1080px;
+  */
   height: 8rem;
   background-color: #FFE100;
 }
@@ -124,7 +126,7 @@ header, nav, section, article, aside, footer {display:block;}
 }
 
 .ocean {
-  width:100%;
+  width:100vw;
   /* position:absolute; */
   /* bottom:100px; */
   left:0;
@@ -186,7 +188,7 @@ header, nav, section, article, aside, footer {display:block;}
 }
 
 .title3{
-  width:100%;
+  width:100vw;
   display: inline-block;
 }
 
@@ -199,7 +201,7 @@ header, nav, section, article, aside, footer {display:block;}
 }
 
 .title4{
-  width:100%;
+  width:100vw;
   margin-top: 10rem;
   display: inline-block;
 }
@@ -221,13 +223,18 @@ header, nav, section, article, aside, footer {display:block;}
 }
 
 .title5{
-  width:100%;
+  width:100vw;
   margin-top: 3rem;
-  display: inline-block;
+  display: flex;
+  justify-content: end;
 }
 
 .title5 div{
+  /*
   margin-left: 75rem;
+  */
+  float:right;
+  margin-right: 8rem;
   width:35.5rem;
 }
 
@@ -256,6 +263,7 @@ header, nav, section, article, aside, footer {display:block;}
   display: flex;
   white-space: nowrap;
   background-color: #FFE100;
+  line-height: 19rem;
 }
 
 .text {
@@ -274,7 +282,7 @@ header, nav, section, article, aside, footer {display:block;}
 }
 
 .title6{
-  width:100%;
+  width:100vw;
   margin-top: 10rem;
   display: inline-block;
 }
@@ -282,7 +290,7 @@ header, nav, section, article, aside, footer {display:block;}
 .title6 div{
   /* margin-left: 30rem; */
   margin:auto;
-  width:72rem;
+  width:76rem;
 }
 
 .title6 .p_title{
@@ -309,7 +317,9 @@ header, nav, section, article, aside, footer {display:block;}
 .title7_div{
   margin:auto;
   height: 25rem;
+  /*
   width: 100rem;
+  */
   justify-content : center;
   display: flex;
 }
@@ -317,7 +327,7 @@ header, nav, section, article, aside, footer {display:block;}
 .img-comp-container {
   position: relative;
   margin-top: 16rem;
-  width: 62.5rem;
+  width: 76rem;
 }
 
 .img-comp-img {
@@ -332,7 +342,7 @@ header, nav, section, article, aside, footer {display:block;}
 .img-comp-img img {
   display: block;
   /* height: 25rem;  */
-  width: 62.5rem;
+  width: 76rem;
 }
 
 .img-comp-slider {
@@ -352,14 +362,14 @@ header, nav, section, article, aside, footer {display:block;}
 
 
 .title8{
-  width:100%;
+  width:100vw;
   margin-top: 20rem;
   display: inline-block;
 }
 
 .title8 div{
   margin: auto;
-  width:72rem;
+  width:76rem;
 }
 
 .title8 .p_title{
@@ -425,13 +435,22 @@ header, nav, section, article, aside, footer {display:block;}
   border-left: 0.1rem solid #CCCCCC;
 }
 
+@media screen and (min-width: 400px) {
+  .life_preview{
+    width : 55vw;
+    height : 35vw;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(6,1fr);
+  }
+}
+
 .item {
   width: 100%;
   height: 100%;
   text-align: center;
   /* color: #000000; */
-  font-size: 6rem;
-  /* font-family:"April16th-Life"; */
+  font-size: 5rem;
+  font-family:"April16th-Life";
   /* display: flex;
   justify-content: center;
   align-items: center; */
@@ -545,11 +564,11 @@ header, nav, section, article, aside, footer {display:block;}
 }
 
 .first{
-  width:100%;
+  width:100vw;
 }
 
 .second{
-  width:100%;
+  width:100vw;
   margin-top: 3.313rem;
 }
 
@@ -652,7 +671,7 @@ header, nav, section, article, aside, footer {display:block;}
 .section3{
   margin-top : 12.125rem;
   text-align: center;
-  width:100%;
+  width:100vw;
 }
 
 .section3_div{
@@ -661,7 +680,6 @@ header, nav, section, article, aside, footer {display:block;}
 }
 
 .title_div{
-  width:100%;
   height:100%;
   text-align: left;
 }
@@ -748,7 +766,7 @@ header, nav, section, article, aside, footer {display:block;}
 #slider {
   margin-top: 8rem;
   height: 45.5rem;
-  width: 130%;
+  width: calc(100vw + 20rem);
   overflow:hidden;
   margin-left: -20rem;
   margin-bottom : 4rem;
@@ -761,4 +779,36 @@ header, nav, section, article, aside, footer {display:block;}
   text-align:center;
   margin-right: 2rem;
   background-size: cover;
+}
+
+/* tooltip */
+/* .tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+} */
+
+.tooltip2 .tooltiptext {
+  visibility: hidden;
+  width: 35.1rem;
+  height: 7rem;
+  background-color: black;
+  font-size: 1.6rem;
+  color: #fff;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-family:"April16th-Promise";
+  text-align: left;
+  border-radius: 6px;
+  padding: 0.6rem 1.2rem;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 105%;
+}
+
+.tooltip2:hover .tooltiptext {
+  visibility: visible;
 }
