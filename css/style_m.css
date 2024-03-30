@@ -1,0 +1,72 @@
+
+/*
+@font-face{
+	font-family:"April16th-Promise";
+	src:url("../font/231205_April16th-Promise.woff2");
+} */
+
+html{
+  scroll-behavior: smooth;
+}
+
+@font-face{
+  font-family:"April16th-Life";
+	src:url("../font/April16th-Life.woff");
+}
+
+@font-face{
+  font-family:"April16th-Promise";
+	src:url("../font/April16th-Promise.woff");
+}
+
+@font-face{
+  font-family:"April16th-Safety";
+	src:url("../font/April16th-Safety.woff");
+}
+
+body{
+  margin: 0;
+  padding:0;
+  border:0;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, a , p, span, div{font-weight:normal;  font-family:"April16th-Promise";}
+header, nav, section, article, aside, footer {display:block;}
+
+.active_txt{
+  color:#FFE100 !important;
+  opacity: 100% !important;
+}
+
+/* 모바일 화면 */
+.header{
+  display:flex;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100vw;
+  z-index:10000;
+  height:10.449rem;
+  padding: 1.2rem 2rem 1.2rem 2rem;
+}
+
+.header_left{
+  width:100vw;
+  background-color: #DDDDDD;
+  text-align: center;
+}
+
+.logo{
+  width:12rem;
+  margin: auto;
+  text-align: center;
+}
+
+.navbar{
+ display: none;
+}
+
+.navbar2{
+  
+}

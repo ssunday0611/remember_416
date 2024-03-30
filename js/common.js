@@ -222,50 +222,6 @@ $(document).ready(function () {
 
 });
 
-// const slider2 = document.querySelector('#slider');
-// const cards = document.querySelectorAll('.slide');
-// let currentIndex = 0;
-// function slideNext() {
-//   currentIndex++;
-//   if (currentIndex >= cards.length - 2) { // 마지막 카드 이후 첫 번째 카드로 이동
-//     currentIndex = 0;
-//   }
-//   const offset = currentIndex * (cards[0].offsetWidth + 20); // 카드 너비와 마진 합산
-//   slider2.style.transform = `translateX(-${offset}px)`;
-// }
-
-// if (direction === 1) {
-//   $('.slide:first').before($('.slide:last'));
-// } else if (direction === -1) {
-//   $('.slide:last').after($('.slide:first'));
-// }
-
-// setInterval(slideNext, 3000);
-
-// $(document).ready(function () {
-//   //you can set this, as long as it's not greater than the slides length
-//   var show = 3;
-//   //calculate each slides width depending on how many you want to show
-//   var w = $('#slider').width() / show;
-//   var l = $('.slide').length;
-  
-//   //set each slide width
-//   $('.slide').width("45.5rem");
-//   //set the container width to fix the animation and make it look sliding
-//   $('#slide-container').width(w * l)
-  
-//   function slider() {
-//       $('.slide:first-child').animate({
-//           marginLeft: -w //hide the first slide on the left
-//       }, 'slow', function () {
-//           //once completely hidden, move this slide next to the last slide
-//           $(this).appendTo($(this).parent()).css({marginLeft: 0});
-//       });
-//   }
-//   //use setInterval to do the timed execution and animation
-//   var timer = setInterval(slider, 2000);
-// });
-
 const remCalc = (px, base = 10) => {
   let tempPx = px
   if (typeof px === 'string' || px instanceof String)

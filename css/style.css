@@ -39,6 +39,10 @@ header, nav, section, article, aside, footer {display:block;}
   opacity: 100% !important;
 }
 
+.navbar2{
+  display: none;
+}
+
 .navmenu{
   color:black;
   opacity: 30%;
@@ -61,6 +65,8 @@ header, nav, section, article, aside, footer {display:block;}
 }
 
 .header{
+  justify-content: space-between; 
+  display:flex;
   position:fixed;
   top:0;
   left:0;
@@ -761,34 +767,6 @@ header, nav, section, article, aside, footer {display:block;}
   text-align: left;
   word-break:keep-all;
 }
-
-
-/* 슬라이더 */
-
-#slider {
-  margin-top: 8rem;
-  height: 45.5rem;
-  width: calc(100vw + 20rem);
-  overflow:hidden;
-  margin-left: -20rem;
-  margin-bottom : 4rem;
-}
-
-.slide {
-  width:45.5rem;
-  height:45.5rem;
-  float:left;
-  text-align:center;
-  margin-right: 2rem;
-  background-size: cover;
-}
-
-/* tooltip */
-/* .tooltip {
-  position: relative;
-  display: inline-block;
-  border-bottom: 1px dotted black;
-} */
 
 .tooltip2 .tooltiptext {
   word-break:keep-all;
