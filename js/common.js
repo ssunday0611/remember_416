@@ -242,26 +242,66 @@ $(document).ready(function () {
 
 // setInterval(slideNext, 3000);
 
-$(document).ready(function () {
-  //you can set this, as long as it's not greater than the slides length
-  var show = 3;
-  //calculate each slides width depending on how many you want to show
-  var w = $('#slider').width() / show;
-  var l = $('.slide').length;
+// $(document).ready(function () {
+//   //you can set this, as long as it's not greater than the slides length
+//   var show = 3;
+//   //calculate each slides width depending on how many you want to show
+//   var w = $('#slider').width() / show;
+//   var l = $('.slide').length;
   
-  //set each slide width
-  $('.slide').width("45.5rem");
-  //set the container width to fix the animation and make it look sliding
-  $('#slide-container').width(w * l)
+//   //set each slide width
+//   $('.slide').width("45.5rem");
+//   //set the container width to fix the animation and make it look sliding
+//   $('#slide-container').width(w * l)
   
-  function slider() {
-      $('.slide:first-child').animate({
-          marginLeft: -w //hide the first slide on the left
-      }, 'slow', function () {
-          //once completely hidden, move this slide next to the last slide
-          $(this).appendTo($(this).parent()).css({marginLeft: 0});
-      });
-  }
-  //use setInterval to do the timed execution and animation
-  var timer = setInterval(slider, 2000);
+//   function slider() {
+//       $('.slide:first-child').animate({
+//           marginLeft: -w //hide the first slide on the left
+//       }, 'slow', function () {
+//           //once completely hidden, move this slide next to the last slide
+//           $(this).appendTo($(this).parent()).css({marginLeft: 0});
+//       });
+//   }
+//   //use setInterval to do the timed execution and animation
+//   var timer = setInterval(slider, 2000);
+// });
+
+const remCalc = (px, base = 10) => {
+  let tempPx = px
+  if (typeof px === 'string' || px instanceof String)
+    tempPx = tempPx.replace('px', '')
+
+  tempPx = parseInt(tempPx)
+  return (1 / base) * tempPx + 'rem'
+}
+
+var setElm = $('.slide-area'),
+slideSpeed = 5000;
+
+setElm.each(function(){
+	
+	var self = $(this),
+		selfWidth = self.innerWidth(),
+		findUl = self.find('ul'),
+		findLi = self.find('li'),
+		listWidth = findLi.outerWidth(),
+		listCount = findLi.length,
+    listCount = findLi.length,
+		loopWidth = listWidth * listCount + (20*listCount);
+	findUl.wrapAll('<div class="loop-slider-wrap"/>');
+	var selfWrap = self.find('.loop-slider-wrap');
+
+	if(loopWidth > selfWidth){
+		findUl.css({width:loopWidth}).clone().appendTo(selfWrap);
+		
+		selfWrap.css({width:loopWidth*2});
+		
+		function loopMove(){
+			selfWrap.animate({left:'-' + (loopWidth) + 'px'}, slideSpeed * listCount, 'linear', function(){
+				selfWrap.css({left:'0'});
+				loopMove();
+			});
+		};
+	loopMove();	
+	}
 });
