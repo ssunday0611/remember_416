@@ -242,7 +242,6 @@ setElm.each(function(){
 		findLi = self.find('li'),
 		listWidth = findLi.outerWidth(),
 		listCount = findLi.length,
-    listCount = findLi.length,
 		loopWidth = listWidth * listCount + (20*listCount);
 	findUl.wrapAll('<div class="loop-slider-wrap"/>');
 	var selfWrap = self.find('.loop-slider-wrap');

@@ -364,3 +364,409 @@ header, nav, section, article, aside, footer {display:block;}
   border-right: 0.2rem solid #EFEFEF;
   border-bottom: 0.2rem solid #EFEFEF;
 }
+
+.section3{
+  margin-top : 12rem;
+  text-align: center;
+}
+
+.section3 .p_title{
+  font-size : 4.8rem;
+}
+
+.section3 .p_content{
+  margin-top: 2.8rem;
+  font-size : 1.6rem;
+  line-height: 2.56rem;
+  width: 29.6rem;
+  text-align: center;
+  margin: auto;
+}
+
+.preview{
+  display: none;
+}
+
+.section3 .preview_m{
+  text-align: center;
+  margin:auto;
+  margin-top:4rem;
+  width: 33.5rem;
+}
+
+.preview_m .select_font{
+  width: 33.5rem;
+  text-align: left;
+}
+
+.weight_div{
+  width: 100%;
+  display: inline-block;
+}
+
+.preview_m .title{
+  font-size : 1.6rem;
+  color : #999999;
+  text-align: left;
+}
+
+.weight-box{
+  float: left;
+  border: 0.2rem solid #EFEFEF;
+  padding:  0px, 1.2rem, 0px, 1.2rem;
+  width: 10.367rem;
+  height: 3.6rem;
+  text-align: center;
+  color : #CCCCCC;
+  font-size: 2rem;
+  margin-right: 0.74rem;
+  text-align: center;
+  line-height : 3.6rem;
+  cursor: pointer;
+}
+
+.select_size{
+  width: 100%;
+  margin: auto;
+  margin-top: 4rem;
+}
+
+.select_size div{
+  float:left;
+  font-size: 1.6rem;
+}
+
+.div_range_class{
+  width: 100%;
+  display: inline-block;
+}
+
+.div_range{
+  margin : 0px 1.2rem;
+  width: 26.3rem;
+  display: inline-block;
+}
+
+.select_size span{
+  float:left;
+  font-size: 1.6rem;
+}
+
+#customRange1 {
+  background: linear-gradient(to right, #FFE100 0%, #FFE100 50%, #FFE100 50%, #FFE100 100%);
+  height : 0.2rem;
+  width: 26.3rem;
+  outline: none;
+  transition: background 450ms ease-in;
+  -webkit-appearance: none;
+  accent-color: #FFE100;
+  margin-top: 0.9rem;
+  cursor: pointer;
+}
+
+.select_background{
+  margin-top: 8rem;
+  width: 100%;
+}
+
+.select_background .title{
+  width: 100%;
+}
+
+.background_img{
+  width: 100%;
+}
+
+.background-box{
+  width: 7.2rem;
+  height: 7.2rem;
+  float:left;
+  cursor: pointer;
+}
+
+#img1{
+  background-image: url(../image/background_img1.png);
+  background-size: cover;
+  margin-right: 1.567rem;
+}
+
+#img2{
+  background-image: url(../image/background_img2.png);
+  background-size: cover;
+  margin-right: 1.567rem;
+}
+
+#img3{
+  background-image: url(../image/background_img3.png);
+  background-size: cover;
+  margin-right: 1.567rem;
+}
+
+#img4{
+  background-image: url(../image/background_img4.png);
+  background-size: cover;
+}
+
+.background_img_txt{
+  width :100%;
+  margin-top:1.2rem;
+  display:inline-block;
+}
+
+.background_img_txt p{
+  width: 7.2rem;
+  height: 1.7rem;
+  float:left;
+  font-size : 1.6rem;
+  color: #CCCCCC;
+}
+
+.preview_div{
+  margin-top: 4rem;
+}
+
+.preview_typing{
+  text-align: center;
+  background-color: #FFFCE3;
+  width: 33.5rem;
+  height : 33.5rem;
+  margin: auto;
+  font-family: "April16th-Life";
+  font-size: 4.8rem;
+  border : 0.2rem solid #DDDDDD;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow:hidden;
+}
+
+.button_div{
+  margin-top: 2.8rem;
+}
+
+.button_div2{
+  margin-top: 0.8rem;
+}
+
+.save{
+  float:left;
+  width: 26.6rem;
+  height : 6rem;
+  background-color:#FFE100;
+  color: black;
+  line-height:6rem;
+  font-size:2rem;
+  cursor: pointer;
+  margin-right: 0.8rem;
+}
+
+.reset{
+  float:left;
+  width: 6rem;
+  height : 6rem;
+  border : 0.2rem solid #DDDDDD;
+  color: #DDDDDD;
+  line-height:6rem;
+  font-size:2rem;
+  cursor: pointer;
+}
+
+.upload{
+  margin-top:0.8rem;
+  float:left;
+  width: 33.4rem;
+  height : 6rem;
+  border : 0.2rem solid #FFE100;
+  color: #FFE100;
+  font-size: 2rem;
+  line-height: 6rem;
+}
+
+/* 다운로드 */
+.section3{
+  margin-top: 24rem;
+  text-align: center;
+  width:100vw;
+}
+
+.section3 .left{
+  margin-top:4.2rem;
+}
+
+.section3_div{
+  margin-top: 12rem;
+  width : 33.5rem;
+  margin:auto;
+  cursor: pointer;
+}
+
+.title_div{
+  height:100%;
+  text-align: left;
+}
+
+.title_div > .title{
+  font-size: 4rem;
+  color: #000000;
+  margin-left:0px;
+}
+
+.font_format{
+  font-size: 2rem;
+  color: #999999;
+  text-align: left;
+}
+
+.otf_btn{
+  width:33.5rem;
+  height: 6rem;
+  background-image: url(../image/otf_btn.png);
+  background-size: cover;
+  cursor: pointer;
+}
+
+.ttf_btn{
+  margin-top: 1.2rem;
+  width:33.5rem;
+  height: 6rem;
+  background-image: url(../image/ttf_btn.png);
+  background-size: cover;
+  cursor: pointer;
+}
+
+.tooltip2 .tooltiptext {
+  word-break:keep-all;
+  visibility: hidden;
+  width: 35.1rem;
+  height: 7rem;
+  background-color: black;
+  font-size: 1.6rem;
+  color: #fff;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-family:"April16th-Promise";
+  text-align: left;
+  border : 0.2rem solid #000000;
+  padding: 0.6rem 1.2rem;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  bottom: 0.8rem;
+  left: 80%;
+}
+
+.tooltip2:hover .tooltiptext {
+  visibility: visible;
+}
+
+.woff{
+  display:inline-block;
+  margin-top:1rem;
+}
+
+.woff_btn{
+  float:left;
+  background-image: url(../image/woff_btn.png);
+  background-size: cover;
+  width: 16.25rem;
+  height: 6rem;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.woff2_btn{
+  float:left;
+  background-image: url(../image/woff2_btn.png);
+  background-size: cover;
+  width: 16.25rem;
+  height: 6rem;
+  cursor: pointer;
+}
+
+.right{
+  margin-top: 4rem;
+}
+
+.font_spec{
+  color:#000000;
+  font-size: 2rem;
+  line-height: 3.6rem;
+  text-align: left;
+  word-break:keep-all;
+}
+
+.loop-slider-wrap{
+	top: 0;
+	left: 0;
+	height: 21.9rem;
+	overflow: hidden;
+	position: absolute;
+}
+
+.slide-area-div{
+  height: 25rem;
+  background-color: #ffffff;
+}
+
+.slide-area{
+	margin: 0 auto;
+	width: 100%;
+	height: 21.9rem;
+	text-align: left;
+	position: relative;
+	overflow: hidden;
+  margin-bottom: 4rem;
+  margin-top: 8rem;
+}
+
+.slide-area ul{
+	height: 21.9rem;
+	float: left;
+	overflow: hidden;
+	padding: 0;
+}
+
+.slide-area ul li{
+	width: 21.9rem;
+	height: 21.9rem;
+	float: left;
+	display: inline;
+	overflow: hidden;
+  margin-left: 2rem;
+}
+
+.slide-area ul li img{
+  width: 21.9rem;
+	height: 21.9rem;
+	object-fit: cover;
+}
+
+.footer{
+  display: none;
+}
+
+.footer_m{
+  bottom:0;
+  left:0;
+  width:100vw;
+  z-index:10000;
+  height: 14.1rem;
+  background-color: #FFE100;
+  text-align: center;
+}
+
+.logo2{
+  /* margin-top:2rem; */
+  width: 16rem;
+  height:5.7rem;
+  margin-top: 2rem;
+}
+
+.copyright{
+  color:#FFFFFF;
+  font-size: 1.6rem;
+  margin-top : 1.2rem;
+}
