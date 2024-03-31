@@ -1,3 +1,789 @@
+/* 모바일 */
+
+@media screen and (max-width:480px) {
+
+/*
+@font-face{
+	font-family:"April16th-Promise";
+	src:url("../font/231205_April16th-Promise.woff2");
+} */
+
+html{
+  scroll-behavior: smooth;
+}
+
+@font-face{
+  font-family:"April16th-Life";
+	src:url("../font/April16th-Life.woff");
+}
+
+@font-face{
+  font-family:"April16th-Promise";
+	src:url("../font/April16th-Promise.woff");
+}
+
+@font-face{
+  font-family:"April16th-Safety";
+	src:url("../font/April16th-Safety.woff");
+}
+
+body{
+  margin: 0;
+  padding:0;
+  border:0;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, a , p, span, div{font-weight:normal;  font-family:"April16th-Promise"; }
+header, nav, section, article, aside, footer {display:block;}
+
+.active_txt{
+  color:#FFE100 !important;
+  opacity: 100% !important;
+}
+
+/* 모바일 화면 */
+.header2{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  z-index:10000;
+  height:10.449rem;
+  padding: 1.2rem 2rem 1.2rem 2rem;
+}
+
+.logo_div{
+  width:100%;
+  display: inline-block;
+  text-align: center;
+}
+
+.logo{
+  width:12rem;
+  margin: auto;
+  text-align: center;
+}
+
+.navbar2{
+  width:100%;
+  text-align: center;
+  margin-top:2rem;
+}
+
+.header{
+ display: none;
+}
+
+.navmenu{
+  color:black;
+  opacity: 30%;
+  font-size: 2rem;
+  padding: 15px 15px;
+  text-decoration: none;
+}
+
+.section1{
+  display: none;
+}
+
+.contents{
+  margin: 0;
+  padding: 0;
+}
+
+.main_video video{
+  width: 100%;
+}
+
+.section1_m{
+  display:flex;
+  position:fixed;
+  z-index: -1;
+  bottom:0%;
+}
+
+.section1_1{
+  height:100%;
+  text-align: center;
+  margin-top: 100vh;
+}
+
+.title2{
+  margin-top : 8rem;
+  width:33.5rem;
+  margin:auto;
+}
+
+.title2 p{
+  color: black;
+  width:33.5rem;
+  z-index:500;
+  font-size:2rem;
+  line-height: 3.2rem;
+  text-align:left;
+  word-break:keep-all;
+}
+
+.section_back{
+  background-color: #FFFFFF;
+  margin-top: 50.8rem;
+}
+
+.section2{
+  text-align: center;
+}
+
+.title3{
+  width:100vw;
+  display: inline-block;
+  margin-top:16rem;
+}
+
+.title3 p{
+  text-align:center;
+  color:black;
+  font-size:2.4rem;
+  line-height: 3.84rem;
+  width:33.4rem;
+  margin:auto;
+  word-break:keep-all;
+}
+
+.title4{
+  width:33.4rem;
+  margin-top: 12rem;
+  display: inline-block;
+}
+
+.title4 div{
+  margin:auto;
+  width:33.4rem;
+}
+
+.title4 div video{
+  width : 100%;
+}
+
+.scrolling_text {
+  margin-top: 12.075rem;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  white-space: nowrap;
+  background-color: #FFE100;
+  line-height: 15rem;
+}
+
+.text {
+  font-size: 16rem;
+  color: black;
+  animation: animate_text 30s linear infinite; /* The animation property */
+}
+
+@keyframes animate_text {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+.title6{
+  width:100vw;
+  margin-top: 4rem;
+  display: inline-block;
+}
+
+.title6 div{
+  /* margin-left: 30rem; */
+  margin:auto;
+  width:33.4rem;
+}
+
+.title6 .p_title{
+  font-size:2.8rem;
+  color: black;
+  text-align:left;
+  margin:auto;
+  line-height: 2.912rem;
+}
+
+.title6 .p_content{
+  font-size:1.6rem;
+  color: black;
+  text-align:left;
+  margin:auto;
+  line-height: 2.56rem;
+  word-break:keep-all;
+}
+
+/* 비교 부분 */
+
+.title7{
+  margin-top: 12rem;
+  width: 100%;
+  display:inline-block;
+}
+
+.title7_div{
+  margin:auto;
+  height: 32rem;
+  justify-content : center;
+  display: flex;
+}
+
+.img-comp-container {
+  position: relative;
+  margin-top: 10rem;
+  width: 33.4rem;
+}
+
+.img-comp-img {
+  /* margin:auto; */
+  width: 33.4rem;
+  position: absolute;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+}
+
+.img-comp-img img {
+  display: block;
+  /* height: 25rem;  */
+  width: 33.4rem;
+}
+
+.img-comp-slider {
+  position: absolute;
+  z-index: 9;
+  top: -5rem;
+  cursor: ew-resize;
+  /*set the appearance of the slider:*/
+  width: 2rem;
+  height: 80%;
+  /* background-color: #2196F3; */
+  background-image: url(../image/compare_btn.png);
+  /* opacity: 0.7;
+  border-radius: 50%; */
+  background-size: cover;
+}
+
+.title8{
+  width:100vw;
+  margin-top: 4rem;
+  display: inline-block;
+}
+
+.title8 div{
+  margin: auto;
+  width: 33.4rem;
+}
+
+.title8 .p_title{
+  font-size:2.8rem;
+  color: black;
+  text-align:left;
+  margin:auto;
+  line-height: 2.912rem;
+}
+
+.title8 .p_content{
+  font-size: 1.6rem;
+  line-height: 2.56rem;
+  color: black;
+  text-align:left;
+  margin:auto;
+  word-break:keep-all;
+}
+
+.title9{
+  width: 100%;
+  margin-top: 12rem;
+  margin-bottom: 10%;
+  text-align: center;
+}
+
+.btn_div{
+  display: inline-block;
+  text-align: center;
+}
+
+.preview_btn{
+  float: left;
+  width: 7.3rem;
+  height: 4.5rem;
+  font-family:"April16th-Promise";
+  border: 0.2rem solid #EFEFEF;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  color:#CCCCCC;
+  font-size: 2.8rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.active{
+  background-color: #FFE100 !important;
+  color : #ffffff !important;
+  border : #FFE100 !important;
+}
+
+.preview_div{
+  display:inline-block;
+  margin:auto;
+}
+
+.life_preview{
+  width : 33.5rem;
+  display:grid;
+  grid-template-columns: 67px 67px 67px 67px 67px ;
+  grid-template-rows: 67px 67px 67px 67px 67px 67px 67px 67px 67px 67px;
+  margin-top: 4rem;
+  text-align:center;
+  border-top: 0.2rem solid #EFEFEF;
+  border-left: 0.2rem solid #EFEFEF;
+}
+
+@media screen and (min-width: 400px) {
+  .life_preview{
+    width : 33.5rem;
+    height : 67rem;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(10,1fr);
+  }
+}
+
+.item {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 4rem;
+  font-family:"April16th-Life";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 0.2rem solid #EFEFEF;
+  border-bottom: 0.2rem solid #EFEFEF;
+}
+
+.section3{
+  margin-top : 12rem;
+  text-align: center;
+}
+
+.section3 .p_title{
+  font-size : 4.8rem;
+}
+
+.section3 .p_content{
+  margin-top: 2.8rem;
+  font-size : 1.6rem;
+  line-height: 2.56rem;
+  width: 29.6rem;
+  text-align: center;
+  margin: auto;
+}
+
+.preview{
+  display: none;
+}
+
+.section3 .preview_m{
+  text-align: center;
+  margin:auto;
+  margin-top:4rem;
+  width: 33.5rem;
+}
+
+.preview_m .select_font{
+  width: 33.5rem;
+  text-align: left;
+}
+
+.weight_div{
+  width: 100%;
+  display: inline-block;
+}
+
+.preview_m .title{
+  font-size : 1.6rem;
+  color : #999999;
+  text-align: left;
+}
+
+.weight-box{
+  float: left;
+  border: 0.2rem solid #EFEFEF;
+  padding:  0px, 1.2rem, 0px, 1.2rem;
+  width: 10.367rem;
+  height: 3.6rem;
+  text-align: center;
+  color : #CCCCCC;
+  font-size: 2rem;
+  margin-right: 0.74rem;
+  text-align: center;
+  line-height : 3.6rem;
+  cursor: pointer;
+}
+
+.select_size{
+  width: 100%;
+  margin: auto;
+  margin-top: 4rem;
+}
+
+.select_size div{
+  float:left;
+  font-size: 1.6rem;
+}
+
+.div_range_class{
+  width: 100%;
+  display: inline-block;
+}
+
+.div_range{
+  margin : 0px 1.2rem;
+  width: 26.3rem;
+  display: inline-block;
+}
+
+.select_size span{
+  float:left;
+  font-size: 1.6rem;
+}
+
+#customRange1 {
+  background: linear-gradient(to right, #FFE100 0%, #FFE100 50%, #FFE100 50%, #FFE100 100%);
+  height : 0.2rem;
+  width: 26.3rem;
+  outline: none;
+  transition: background 450ms ease-in;
+  -webkit-appearance: none;
+  accent-color: #FFE100;
+  margin-top: 0.9rem;
+  cursor: pointer;
+}
+
+.select_background{
+  margin-top: 8rem;
+  width: 100%;
+}
+
+.select_background .title{
+  width: 100%;
+}
+
+.background_img{
+  width: 100%;
+}
+
+.background-box{
+  width: 7.2rem;
+  height: 7.2rem;
+  float:left;
+  cursor: pointer;
+}
+
+#img1{
+  background-image: url(../image/background_img1.png);
+  background-size: cover;
+  margin-right: 1.567rem;
+}
+
+#img2{
+  background-image: url(../image/background_img2.png);
+  background-size: cover;
+  margin-right: 1.567rem;
+}
+
+#img3{
+  background-image: url(../image/background_img3.png);
+  background-size: cover;
+  margin-right: 1.567rem;
+}
+
+#img4{
+  background-image: url(../image/background_img4.png);
+  background-size: cover;
+}
+
+.background_img_txt{
+  width :100%;
+  margin-top:1.2rem;
+  display:inline-block;
+}
+
+.background_img_txt p{
+  width: 7.2rem;
+  height: 1.7rem;
+  float:left;
+  font-size : 1.6rem;
+  color: #CCCCCC;
+}
+
+.preview_div{
+  margin-top: 4rem;
+}
+
+.preview_typing{
+  text-align: center;
+  background-color: #FFFCE3;
+  width: 33.5rem;
+  height : 33.5rem;
+  margin: auto;
+  font-family: "April16th-Life";
+  font-size: 4.8rem;
+  border : 0.2rem solid #DDDDDD;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow:hidden;
+}
+
+.button_div{
+  margin-top: 2.8rem;
+}
+
+.button_div2{
+  margin-top: 0.8rem;
+}
+
+.save{
+  float:left;
+  width: 26.6rem;
+  height : 6rem;
+  background-color:#FFE100;
+  color: black;
+  line-height:6rem;
+  font-size:2rem;
+  cursor: pointer;
+  margin-right: 0.8rem;
+}
+
+.reset{
+  float:left;
+  width: 6rem;
+  height : 6rem;
+  border : 0.2rem solid #DDDDDD;
+  color: #DDDDDD;
+  line-height:6rem;
+  font-size:2rem;
+  cursor: pointer;
+}
+
+.upload{
+  margin-top:0.8rem;
+  float:left;
+  width: 33.4rem;
+  height : 6rem;
+  border : 0.2rem solid #FFE100;
+  color: #FFE100;
+  font-size: 2rem;
+  line-height: 6rem;
+}
+
+/* 다운로드 */
+.section3{
+  margin-top: 24rem;
+  text-align: center;
+  width:100vw;
+}
+
+.section3 .left{
+  margin-top:4.2rem;
+}
+
+.section3_div{
+  margin-top: 12rem;
+  width : 33.5rem;
+  margin:auto;
+  cursor: pointer;
+}
+
+.title_div{
+  height:100%;
+  text-align: left;
+}
+
+.title_div > .title{
+  font-size: 4rem;
+  color: #000000;
+  margin-left:0px;
+}
+
+.font_format{
+  font-size: 2rem;
+  color: #999999;
+  text-align: left;
+}
+
+.otf_btn{
+  width:33.5rem;
+  height: 6rem;
+  background-image: url(../image/otf_btn.png);
+  background-size: cover;
+  cursor: pointer;
+}
+
+.ttf_btn{
+  margin-top: 1.2rem;
+  width:33.5rem;
+  height: 6rem;
+  background-image: url(../image/ttf_btn.png);
+  background-size: cover;
+  cursor: pointer;
+}
+
+.tooltip2 .tooltiptext {
+  word-break:keep-all;
+  visibility: hidden;
+  width: 35.1rem;
+  height: 7rem;
+  background-color: black;
+  font-size: 1.6rem;
+  color: #fff;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-family:"April16th-Promise";
+  text-align: left;
+  border : 0.2rem solid #000000;
+  padding: 0.6rem 1.2rem;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  bottom: 0.8rem;
+  left: 80%;
+}
+
+.tooltip2:hover .tooltiptext {
+  visibility: visible;
+}
+
+.woff{
+  display:inline-block;
+  margin-top:1rem;
+}
+
+.woff_btn{
+  float:left;
+  background-image: url(../image/woff_btn.png);
+  background-size: cover;
+  width: 16.25rem;
+  height: 6rem;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.woff2_btn{
+  float:left;
+  background-image: url(../image/woff2_btn.png);
+  background-size: cover;
+  width: 16.25rem;
+  height: 6rem;
+  cursor: pointer;
+}
+
+.right{
+  margin-top: 4rem;
+}
+
+.font_spec{
+  color:#000000;
+  font-size: 2rem;
+  line-height: 3.6rem;
+  text-align: left;
+  word-break:keep-all;
+}
+
+.loop-slider-wrap{
+	top: 0;
+	left: 0;
+	height: 21.9rem;
+	overflow: hidden;
+	position: absolute;
+}
+
+.slide-area-div{
+  height: 25rem;
+  background-color: #ffffff;
+}
+
+.slide-area{
+	margin: 0 auto;
+	width: 100%;
+	height: 21.9rem;
+	text-align: left;
+	position: relative;
+	overflow: hidden;
+  margin-bottom: 4rem;
+  margin-top: 8rem;
+}
+
+.slide-area ul{
+	height: 21.9rem;
+	float: left;
+	overflow: hidden;
+	padding: 0;
+}
+
+.slide-area ul li{
+	width: 21.9rem;
+	height: 21.9rem;
+	float: left;
+	display: inline;
+	overflow: hidden;
+  margin-left: 2rem;
+}
+
+.slide-area ul li img{
+  width: 21.9rem;
+	height: 21.9rem;
+	object-fit: cover;
+}
+
+.footer{
+  display: none;
+}
+
+.footer_m{
+  bottom:0;
+  left:0;
+  width:100vw;
+  z-index:10000;
+  height: 14.1rem;
+  background-color: #FFE100;
+  text-align: center;
+}
+
+.logo2{
+  /* margin-top:2rem; */
+  width: 16rem;
+  height:5.7rem;
+  margin-top: 2rem;
+}
+
+.copyright{
+  color:#FFFFFF;
+  font-size: 1.6rem;
+  margin-top : 1.2rem;
+}
+
+}
+
+
+@media screen and (max-width:3000px) 
+{
+/*
+@font-face{
+	font-family:"April16th-Promise";
+	src:url("../font/231205_April16th-Promise.woff2");
+} */
 
 html{
   scroll-behavior: smooth;
@@ -841,4 +1627,5 @@ header, nav, section, article, aside, footer {display:block;}
 
 .footer_m{
   display: none;
+}
 }
