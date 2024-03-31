@@ -181,16 +181,16 @@ $(document).ready(function () {
     reader.readAsDataURL(file);
   });
 
-  $("#customRange1").on("input change",function () {
+  $(".customRange1").on("input change",function () {
     $('.preview_typing').css("font-size", $(this).val() + "px");
   });
 
-  $("#customRange1").on("input change",function () {
+  $(".customRange1").on("input change",function () {
     $('.preview_typing').css("font-size", $(this).val() + "px");
   });
 
   //초기화
-  $("#reset").on("click", function () {
+  $(".reset").on("click", function () {
     $(".preview_typing").text("바다에도 봄이 온다");
     $('.preview_typing').css("background-color", "#FFFCE3");
     $('.preview_typing').css("background-image", "");
@@ -198,10 +198,10 @@ $(document).ready(function () {
     $('.preview_typing').css("font-size", "4rem");
     $('.weight-box').removeClass("active");
     $('.life_btn').addClass("active");
-    $("#customRange1").val("50");
+    $(".customRange1").val("50");
   });
 
-  $("#save").on("click", function () {
+  $(".save").on("click", function () {
     downImg();
   });
 
