@@ -5,6 +5,11 @@
 	src:url("../font/231205_April16th-Promise.woff2");
 } */
 
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+  }
+
 html{
   scroll-behavior: smooth;
 }
