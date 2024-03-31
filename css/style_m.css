@@ -31,7 +31,7 @@ body{
   overflow-x: hidden;
 }
 
-h1, h2, h3, h4, h5, h6, a , p, span, div{font-weight:normal;  font-family:"April16th-Promise";}
+h1, h2, h3, h4, h5, h6, a , p, span, div{font-weight:normal;  font-family:"April16th-Promise"; }
 header, nav, section, article, aside, footer {display:block;}
 
 .active_txt{
@@ -40,20 +40,19 @@ header, nav, section, article, aside, footer {display:block;}
 }
 
 /* 모바일 화면 */
-.header{
-  display:flex;
+.header2{
   position:fixed;
   top:0;
   left:0;
-  width:100vw;
+  width:100%;
   z-index:10000;
   height:10.449rem;
   padding: 1.2rem 2rem 1.2rem 2rem;
 }
 
-.header_left{
-  width:100vw;
-  background-color: #DDDDDD;
+.logo_div{
+  width:100%;
+  display: inline-block;
   text-align: center;
 }
 
@@ -63,10 +62,305 @@ header, nav, section, article, aside, footer {display:block;}
   text-align: center;
 }
 
-.navbar{
+.navbar2{
+  width:100%;
+  text-align: center;
+  margin-top:2rem;
+}
+
+.header{
  display: none;
 }
 
-.navbar2{
-  
+.navmenu{
+  color:black;
+  opacity: 30%;
+  font-size: 2rem;
+  padding: 15px 15px;
+  text-decoration: none;
+}
+
+.section1{
+  display: none;
+}
+
+.contents{
+  margin: 0;
+  padding: 0;
+}
+
+.main_video video{
+  width: 100%;
+}
+
+.section1_m{
+  display:flex;
+  position:fixed;
+  z-index: -1;
+  bottom:0%;
+}
+
+.section1_1{
+  height:100%;
+  text-align: center;
+  margin-top: 100vh;
+}
+
+.title2{
+  margin-top : 8rem;
+  width:33.5rem;
+  margin:auto;
+}
+
+.title2 p{
+  color: black;
+  width:33.5rem;
+  z-index:500;
+  font-size:2rem;
+  line-height: 3.2rem;
+  text-align:left;
+  word-break:keep-all;
+}
+
+.section_back{
+  background-color: #FFFFFF;
+  margin-top: 50.8rem;
+}
+
+.section2{
+  text-align: center;
+}
+
+.title3{
+  width:100vw;
+  display: inline-block;
+  margin-top:16rem;
+}
+
+.title3 p{
+  text-align:center;
+  color:black;
+  font-size:2.4rem;
+  line-height: 3.84rem;
+  width:33.4rem;
+  margin:auto;
+  word-break:keep-all;
+}
+
+.title4{
+  width:33.4rem;
+  margin-top: 12rem;
+  display: inline-block;
+}
+
+.title4 div{
+  margin:auto;
+  width:33.4rem;
+}
+
+.title4 div video{
+  width : 100%;
+}
+
+.scrolling_text {
+  margin-top: 12.075rem;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  white-space: nowrap;
+  background-color: #FFE100;
+  line-height: 15rem;
+}
+
+.text {
+  font-size: 16rem;
+  color: black;
+  animation: animate_text 30s linear infinite; /* The animation property */
+}
+
+@keyframes animate_text {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+.title6{
+  width:100vw;
+  margin-top: 4rem;
+  display: inline-block;
+}
+
+.title6 div{
+  /* margin-left: 30rem; */
+  margin:auto;
+  width:33.4rem;
+}
+
+.title6 .p_title{
+  font-size:2.8rem;
+  color: black;
+  text-align:left;
+  margin:auto;
+  line-height: 2.912rem;
+}
+
+.title6 .p_content{
+  font-size:1.6rem;
+  color: black;
+  text-align:left;
+  margin:auto;
+  line-height: 2.56rem;
+  word-break:keep-all;
+}
+
+/* 비교 부분 */
+
+.title7{
+  margin-top: 12rem;
+  width: 100%;
+  display:inline-block;
+}
+
+.title7_div{
+  margin:auto;
+  height: 32rem;
+  justify-content : center;
+  display: flex;
+}
+
+.img-comp-container {
+  position: relative;
+  margin-top: 10rem;
+  width: 33.4rem;
+}
+
+.img-comp-img {
+  /* margin:auto; */
+  width: 33.4rem;
+  position: absolute;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+}
+
+.img-comp-img img {
+  display: block;
+  /* height: 25rem;  */
+  width: 33.4rem;
+}
+
+.img-comp-slider {
+  position: absolute;
+  z-index: 9;
+  top: -5rem;
+  cursor: ew-resize;
+  /*set the appearance of the slider:*/
+  width: 2rem;
+  height: 80%;
+  /* background-color: #2196F3; */
+  background-image: url(../image/compare_btn.png);
+  /* opacity: 0.7;
+  border-radius: 50%; */
+  background-size: cover;
+}
+
+.title8{
+  width:100vw;
+  margin-top: 4rem;
+  display: inline-block;
+}
+
+.title8 div{
+  margin: auto;
+  width: 33.4rem;
+}
+
+.title8 .p_title{
+  font-size:2.8rem;
+  color: black;
+  text-align:left;
+  margin:auto;
+  line-height: 2.912rem;
+}
+
+.title8 .p_content{
+  font-size: 1.6rem;
+  line-height: 2.56rem;
+  color: black;
+  text-align:left;
+  margin:auto;
+  word-break:keep-all;
+}
+
+.title9{
+  width: 100%;
+  margin-top: 12rem;
+  margin-bottom: 10%;
+  text-align: center;
+}
+
+.btn_div{
+  display: inline-block;
+  text-align: center;
+}
+
+.preview_btn{
+  float: left;
+  width: 7.3rem;
+  height: 4.5rem;
+  font-family:"April16th-Promise";
+  border: 0.2rem solid #EFEFEF;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  color:#CCCCCC;
+  font-size: 2.8rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.active{
+  background-color: #FFE100 !important;
+  color : #ffffff !important;
+  border : #FFE100 !important;
+}
+
+.preview_div{
+  display:inline-block;
+  margin:auto;
+}
+
+.life_preview{
+  width : 33.5rem;
+  display:grid;
+  grid-template-columns: 67px 67px 67px 67px 67px ;
+  grid-template-rows: 67px 67px 67px 67px 67px 67px 67px 67px 67px 67px;
+  margin-top: 4rem;
+  text-align:center;
+  border-top: 0.2rem solid #EFEFEF;
+  border-left: 0.2rem solid #EFEFEF;
+}
+
+@media screen and (min-width: 400px) {
+  .life_preview{
+    width : 33.5rem;
+    height : 67rem;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(10,1fr);
+  }
+}
+
+.item {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 4rem;
+  font-family:"April16th-Life";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 0.2rem solid #EFEFEF;
+  border-bottom: 0.2rem solid #EFEFEF;
 }

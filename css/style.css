@@ -80,13 +80,19 @@ header, nav, section, article, aside, footer {display:block;}
   right:0;
 }
 
+.header2{
+  display: none;
+}
+
 .section1{
   display:flex;
-  /* margin-top: 23rem; */
-  /* position: sticky; */
   position:fixed;
   z-index: -1;
-  bottom:-5%;
+  bottom:0%;
+}
+
+.section1_m{
+  display: none;
 }
 
 .section1_1{
