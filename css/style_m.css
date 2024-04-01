@@ -103,7 +103,7 @@ header, nav, section, article, aside, footer {display:block;}
 .section1_1{
   height:100%;
   text-align: center;
-  /* margin-top: 100vh; */
+  margin-top: 100vh;
 }
 
 .title2{
