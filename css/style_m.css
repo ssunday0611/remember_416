@@ -90,7 +90,7 @@ header, nav, section, article, aside, footer {display:block;}
 }
 
 .main_video video{
-  width: 100%;
+  width: 100vw;
 }
 
 .section1_m{
