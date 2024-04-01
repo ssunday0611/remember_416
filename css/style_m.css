@@ -123,6 +123,7 @@ header, nav, section, article, aside, footer {display:block;}
 }
 
 .section_back{
+  width:100%;
   background-color: #FFFFFF;
   margin-top: 50.8rem;
 }
