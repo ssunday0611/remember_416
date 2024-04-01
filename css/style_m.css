@@ -474,6 +474,10 @@ header, nav, section, article, aside, footer {display:block;}
   width: 100%;
 }
 
+.download_div{
+  width:100%;
+}
+
 .background_img{
   width: 100%;
 }
