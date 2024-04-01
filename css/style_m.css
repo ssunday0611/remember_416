@@ -163,7 +163,7 @@ header, nav, section, article, aside, footer {display:block;}
   width : 100%;
 }
 
-.scrolling_text {
+/* .scrolling_text {
   margin-top: 12.075rem;
   width: 100%;
   overflow: hidden;
@@ -171,7 +171,7 @@ header, nav, section, article, aside, footer {display:block;}
   white-space: nowrap;
   background-color: #FFE100;
   line-height: 15rem;
-}
+} */
 
 .text {
   font-size: 16rem;
