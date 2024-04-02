@@ -146,6 +146,11 @@ $(document).ready(function () {
     $(".life_preview").append("<span class='item'>"+arr[i]+"</span>");
   }
 
+  $(".navmenu").on("click", function () {
+    $(".navmenu").removeClass("active_txt");
+    $(this).addClass("active_txt");
+  });
+
   $(".preview_btn").on("click", function () {
     $(".preview_btn").removeClass("active");
     $(this).addClass("active");
@@ -262,3 +267,40 @@ setElm.each(function(){
 	loopMove();	
 	}
 });
+
+
+//특정영역에 js실행
+var isVisible = false;
+
+$(window).on('scroll',function() {
+    if (checkVisible($('#home'))&&!isVisible) {
+        $(".navmenu").removeClass("active_txt");
+        $(".home").addClass("active_txt");
+    }else if(checkVisible($('#introduce'))&&!isVisible){
+      $(".navmenu").removeClass("active_txt");
+      $(".introduce").addClass("active_txt");
+      // isVisible=true;
+    }else if(checkVisible($('#campaign'))&&!isVisible){
+      $(".navmenu").removeClass("active_txt");
+      $(".campaign").addClass("active_txt");
+      // isVisible=true;
+    }else if(checkVisible($('#download'))&&!isVisible){
+      $(".navmenu").removeClass("active_txt");
+      $(".download").addClass("active_txt");
+      // isVisible=true;
+    }else{
+      $(".navmenu").removeClass("active_txt");
+      $(".home").addClass("active_txt");
+    }
+});
+
+function checkVisible( elm, eval ) {
+    eval = eval || "object visible";
+    var viewportHeight = $(window).height(), // Viewport Height
+        scrolltop = $(window).scrollTop(), // Scroll Top
+        y = $(elm).offset().top,
+        elementHeight = $(elm).height();   
+    
+    if (eval == "object visible") return ((y < (viewportHeight + scrolltop)) && (y > (scrolltop - elementHeight)));
+    if (eval == "above") return ((y < (viewportHeight + scrolltop)));
+}

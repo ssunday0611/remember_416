@@ -101,6 +101,8 @@ header, nav, section, article, aside, footer {display:block;}
 
 .main_video video{
   width: 100vw;
+  position: absolute;
+  bottom:0;
 }
 
 .section1_m{

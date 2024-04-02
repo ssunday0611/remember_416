@@ -160,6 +160,8 @@ header, nav, section, article, aside, footer {display:block;}
 
 .main_video video{
   width: 100%;
+  position: fixed;
+  bottom:0;
 }
 
 .section_back{
