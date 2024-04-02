@@ -5,6 +5,12 @@
 	src:url("../font/231205_April16th-Promise.woff2");
 } */
 
+video {
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+}
+
 html{
   scroll-behavior: smooth;
 }
@@ -37,6 +43,10 @@ header, nav, section, article, aside, footer {display:block;}
 .active_txt{
   color:#FFE100 !important;
   opacity: 100% !important;
+}
+
+.active2{
+  border : 0.2rem solid #FFE100 !important;
 }
 
 /* 모바일 화면 */
@@ -532,18 +542,21 @@ header, nav, section, article, aside, footer {display:block;}
 
 .preview_typing{
   text-align: center;
-  background-color: #FFFCE3;
+  /* background-color: #FFFCE3; */
   width: 33.5rem;
   height : 33.5rem;
   margin: auto;
   font-family: "April16th-Life";
   font-size: 4.8rem;
   border : 0.2rem solid #DDDDDD;
-  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
   overflow:hidden;
+  background-image:url(../image/background_img.png), url(../image/background_img1.png);
+  background-size:100% 100%, 100% 100%; 
+  background-size: cover;
+  background-position:0px 0px ,0px 0px;
 }
 
 .button_div{

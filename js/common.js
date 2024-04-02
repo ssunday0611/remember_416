@@ -160,9 +160,11 @@ $(document).ready(function () {
 
   $(".background-box").on("click", function () {
     $(".background-box").removeClass("active2");
+    $(".img_txt").removeClass("active_txt");
     $(this).addClass("active2");
+    $("p[img-src='"+$(this).attr("img-src")+"']").addClass("active_txt");
     if($(this).attr("img-src") != "imgUpload"){
-      $(".preview_typing").css("background-image",  "url("+$(this).attr("img-src")+".png)" );
+      $(".preview_typing").css("background-image",  "url(./image/background_img.png), url("+$(this).attr("img-src")+".png)" );
     }
     //직접 업로드
     else{
@@ -175,7 +177,7 @@ $(document).ready(function () {
     var file = event.target.files[0];
     var reader = new FileReader(); 
     reader.onload = function(e) {
-      $(".preview_typing").css({"background-image":"url("+ e.target.result+")"}); 			
+      $(".preview_typing").css({"background-image":"url(./image/background_img.png), url("+ e.target.result+")"}); 			
       $(".preview_typing").setAttribute('crossorigin', 'anonymous');	
     }
     reader.readAsDataURL(file);
@@ -232,7 +234,7 @@ const remCalc = (px, base = 10) => {
 }
 
 var setElm = $('.slide-area'),
-slideSpeed = 5000;
+slideSpeed = 7000;
 
 setElm.each(function(){
 	

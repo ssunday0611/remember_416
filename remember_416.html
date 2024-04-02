@@ -166,17 +166,17 @@
                   <div class="select_background" >
                     <p class="title">배경이미지</p>
                     <div class="background_img">
-                      <div class="background-box active" img-src="./image/background_img1" id="img1"></div>
+                      <div class="background-box active_txt active2" img-src="./image/background_img1" id="img1"></div>
                       <div class="background-box" id="img2" img-src="./image/background_img2"></div>
                       <div class="background-box" id="img3" img-src="./image/background_img3"></div>
                       <div class="background-box" id="img4" img-src="imgUpload"></div>
                       <input type="file" style="display:none" id="file">
                     </div>
                     <div class="background_img_txt">
-                      <p class="active_txt">리본</p>
-                      <p>고래</p>
-                      <p>종이배</p>
-                      <p>업로드</p>
+                      <p class="active_txt img_txt" img-src="./image/background_img1">글리프</p>
+                      <p class="img_txt" img-src="./image/background_img2">고래</p>
+                      <p class="img_txt" img-src="./image/background_img3">리본</p>
+                      <p class="img_txt" img-src="imgUpload">업로드</p>
                     </div>
                   </div>
                   <div class="button_div">
@@ -211,17 +211,17 @@
                 <div class="select_background" >
                   <p class="title">배경이미지</p>
                   <div class="background_img">
-                    <div class="background-box active" img-src="./image/background_img1" id="img1"></div>
+                    <div class="background-box active_txt active2" img-src="./image/background_img1" id="img1"></div>
                     <div class="background-box" id="img2" img-src="./image/background_img2"></div>
                     <div class="background-box" id="img3" img-src="./image/background_img3"></div>
                     <div class="background-box" id="img4" img-src="imgUpload"></div>
                     <input type="file" style="display:none" id="file">
                   </div>
                   <div class="background_img_txt">
-                    <p class="active_txt" style="margin-right: 1.567rem;">리본</p>
-                    <p style="margin-right: 1.567rem;">고래</p>
-                    <p style="margin-right: 1.567rem;">종이배</p>
-                    <p>업로드</p>
+                    <p class="active_txt img_txt" style="margin-right: 1.567rem;" img-src="./image/background_img1">글리프</p>
+                    <p class="img_txt" style="margin-right: 1.567rem;" img-src="./image/background_img2">고래</p>
+                    <p class="img_txt" style="margin-right: 1.567rem;" img-src="./image/background_img3">리본</p>
+                    <p class="img_txt" img-src="imgUpload">업로드</p>
                   </div>
                 </div>
                 <div class="preview_div">
@@ -262,23 +262,32 @@
                   <div class="right">
                     <p class="font_format">폰트구성</p>
                     <p class="font_spec">생명: 한글 2,780자, 라틴 문자 52자, 숫자 10자, 문장 부호 205자</p>
-                    <p class="font_spec">안전: 한글 11,172자, 라틴 문자 52자, 숫자 10자, 문장 부호 205자</p>
-                    <p class="font_spec">약속: 한글 2,780자, 라틴 문자 52자, 숫자 10자, 문장 부호 205자</p>
+                    <p class="font_spec">안전: 한글 2,780자, 라틴 문자 52자, 숫자 10자, 문장 부호 205자</p>
+                    <p class="font_spec">약속: 한글 11,172자, 라틴 문자 52자, 숫자 10자, 문장 부호 205자</p>
                     <br><br>
                     <p class="font_format">지원 포맷</p>
                     <p class="font_spec">otf, ttf, woff, woff2</p>
                     <br><br>
                     <p class="font_format">권장 환경</p>
                     <p class="font_spec">사월십육일체는 컬러 데이터 속성까지 포함하는 SVG(Scalable VectorGraphics) 형식의 폰트입니다. 컬러 폰트가 구현되지 않는 경우 아래의 권장 환경을 확인하시고 업데이트를 진행해 주세요.</p>
-                    <p class="font_spec">• Windows 10, macOS 10.14 Mojave 이상</p>
+                    <!-- <p class="font_spec">• Windows 10, macOS 10.14 Mojave 이상</p>
                     <p class="font_spec">• Adobe Apps: InDesign CC 2019+, Illustrator CC 2018+,</p>
                     <p class="font_spec">&nbsp; &nbsp; Photoshop CC 2017+ 이상, Pages 6.0, Numbers 4.0, and</p>
                     <p class="font_spec">&nbsp; &nbsp; Keynote 7.0 이상</p>
-                    <p class="font_spec">• MS office 365: Word, Powerpoint 가능</p>
+                    <p class="font_spec">• MS office 365: Word, Powerpoint 가능</p> -->
+                    <ul>
+                      <li class="font_spec">Windows 10, macOS 10.14 Mojave 이상</li>
+                      <li class="font_spec">Adobe Apps: InDesign CC 2019+, Illustrator CC 2018+, Photoshop CC 2017+ 이상, Pages 6.0, Numbers 4.0, and Keynote 7.0 이상</li>
+                      <li class="font_spec">MS office 365: Word, Powerpoint 가능</li>
+                    </ul>
                     <br><br>
                     <p class="font_format">라이선스</p>
-                    <p class="font_spec">• «사월십육일체»는 누구나 사용할 수 있는 무료폰트로 영리적, 비영리적 목적으로 자유롭게 활용이 가능합니다.</p>
-                    <p class="font_spec">• «사월십육일체»의 지식재산권은 4.16재단에 있으며 폰트 파일은 유로로 판매할 수 없습니다.</p>
+                    <!-- <p class="font_spec">• «사월십육일체»는 누구나 사용할 수 있는 무료폰트로 영리적, 비영리적 목적으로 자유롭게 활용이 가능합니다.</p>
+                    <p class="font_spec">• «사월십육일체»의 지식재산권은 4.16재단에 있으며 폰트 파일은 유로로 판매할 수 없습니다.</p> -->
+                    <ul>
+                      <li class="font_spec">«사월십육일체»는 누구나 사용할 수 있는 무료폰트로 영리적, 비영리적 목적으로 자유롭게 활용이 가능합니다.</li>
+                      <li class="font_spec">«사월십육일체»의 지식재산권은 4.16재단에 있으며 폰트 파일은 유로로 판매할 수 없습니다.</li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -289,9 +298,8 @@
                   <li class="li1"><img src="./image/ex1.png"></li>
                   <li class="li1"><img src="./image/ex2.png"></li>
                   <li class="li1"><img src="./image/ex3.png"></li>
-                  <li class="li1"><img src="./image/ex1.png"></li>
-                  <li class="li1"><img src="./image/ex2.png"></li>
-                  <li class="li1"><img src="./image/ex3.png"></li>
+                  <li class="li1"><img src="./image/ex4.png"></li>
+                  <li class="li1"><img src="./image/ex5.png"></li>
                 </ul>
               </div>
             </div>
