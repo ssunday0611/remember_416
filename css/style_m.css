@@ -237,7 +237,7 @@ header, nav, section, article, aside, footer {display:block;}
   display:inline-block;
 }
 
-.title7_div{
+.title7_div_m{
   margin:auto;
   height: 32rem;
   justify-content : center;
@@ -271,10 +271,10 @@ header, nav, section, article, aside, footer {display:block;}
   top: -5rem;
   cursor: ew-resize;
   /*set the appearance of the slider:*/
-  width: 2rem;
-  height: 80%;
+  width: 4.5rem;
+  height: 150%;
   /* background-color: #2196F3; */
-  background-image: url(../image/compare_btn.png);
+  background-image: url(../image/compare_btn_m.png);
   /* opacity: 0.7;
   border-radius: 50%; */
   background-size: cover;
@@ -282,7 +282,7 @@ header, nav, section, article, aside, footer {display:block;}
 
 .title8{
   width:100vw;
-  margin-top: 4rem;
+  margin-top: 8rem;
   display: inline-block;
 }
 
@@ -356,13 +356,37 @@ header, nav, section, article, aside, footer {display:block;}
   border-left: 0.2rem solid #EFEFEF;
 }
 
+.comp_txt2{
+  width: 16.9rem;
+  height: 4.1rem;
+  color: #FFFFFF;
+  background-color: rgb(0,0,0,0.5);; 
+  line-height: 4.1rem;
+  font-size: 1.6rem;
+  position:absolute;
+  margin: 0 auto;
+  z-index: 100;
+  top: 70%;
+  left: -339.5px;
+  display:block;
+  transform: translate(240%, -10%)
+}
+
 @media screen and (min-width: 400px) {
   .life_preview{
     width : 33.5rem;
-    height : 67rem;
+    height : 71rem;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(10,1fr);
   }
+}
+
+.tooltiptext{
+  display: none;
+}
+
+.tooltiptext2{
+  display: none;
 }
 
 .item {
@@ -766,4 +790,9 @@ header, nav, section, article, aside, footer {display:block;}
   color:#FFFFFF;
   font-size: 1.6rem;
   margin-top : 1.2rem;
+}
+
+
+.title7_div{
+  display: none;
 }

@@ -23,8 +23,10 @@ function initComparisons() {
     /* Position the slider in the middle: */
     // slider.style.top = (h / 2) - (slider.offsetHeight / 2) + "px";
     slider.style.left = (w / 2) - (slider.offsetWidth / 2) + "px";
+    $(".comp_txt").css("left",(w / 2) - (slider.offsetWidth / 2) + "px");
     /* Execute a function when the mouse button is pressed: */
     slider.addEventListener("mousedown", slideReady);
+    
     /* And another function when the mouse button is released: */
     window.addEventListener("mouseup", slideFinish);
     /* Or touched (for touch screens: */
@@ -39,10 +41,14 @@ function initComparisons() {
       /* Execute a function when the slider is moved: */
       window.addEventListener("mousemove", slideMove);
       window.addEventListener("touchmove", slideMove);
+      $(".comp_txt").css("display","none")
+      $(".comp_txt2").css("display","none")
     }
     function slideFinish() {
       /* The slider is no longer clicked: */
       clicked = 0;
+      $(".comp_txt").css("display","block");
+      $(".comp_txt2").css("display","block")
     }
     function slideMove(e) {
       var pos;
@@ -72,6 +78,8 @@ function initComparisons() {
       img.style.width = x + "px";
       /* Position the slider: */
       slider.style.left = img.offsetWidth - (slider.offsetWidth / 2) + "px";
+      $(".comp_txt").css({"left" : x-500+"px"});
+      $(".comp_txt2").css({"left" : x-500+"px"});
     }
   }
 }
@@ -304,3 +312,23 @@ function checkVisible( elm, eval ) {
     if (eval == "object visible") return ((y < (viewportHeight + scrolltop)) && (y > (scrolltop - elementHeight)));
     if (eval == "above") return ((y < (viewportHeight + scrolltop)));
 }
+
+function myFunction(e,num) {
+  var x = e.pageX;
+  var y = e.pageY;
+  document.getElementById("tooltip"+num).style.left = x+10 + "px";
+  document.getElementById("tooltip"+num).style.top = y + "px";
+}
+
+function myFunction2(e,num) {
+  var x = e.offsetX;
+  var y = e.offsetY;
+  // alert("tooltip"+num+"/"+y);
+  document.getElementById("tooltip2").style.left = x+10 + "px";
+  document.getElementById("tooltip2").style.top = y + "px";
+}
+
+$(".img-comp-slider").on("click", function () {
+  alert("클릭");
+  $(".comp_txt").css("display","none");
+});

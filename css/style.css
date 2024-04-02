@@ -339,6 +339,21 @@ header, nav, section, article, aside, footer {display:block;}
   width: 100rem;
 }
 
+.comp_txt{
+  width: 16.9rem;
+  height: 4.1rem;
+  color: #FFFFFF;
+  background-color: rgb(0,0,0,0.5);; 
+  line-height: 4.1rem;
+  font-size: 1.6rem;
+  position:absolute;
+  margin: 0 auto;
+  z-index: 100;
+  top: 70%;
+  left: 70%;
+  transform: translate(240%, -10%)
+}
+
 .img-comp-slider {
   position: absolute;
   z-index: 9;
@@ -774,9 +789,8 @@ header, nav, section, article, aside, footer {display:block;}
   word-break:keep-all;
 }
 
-.tooltip2 .tooltiptext {
+.tooltiptext {
   word-break:keep-all;
-  visibility: hidden;
   width: 35.1rem;
   height: 7rem;
   background-color: black;
@@ -793,13 +807,41 @@ header, nav, section, article, aside, footer {display:block;}
   /* Position the tooltip */
   position: absolute;
   z-index: 1;
-  bottom: 0.8rem;
-  left: 80%;
+  top: 0;
+  left: 0;
+  visibility: hidden;
 }
 
-.tooltip2:hover .tooltiptext {
-  visibility: visible;
+.tooltiptext2 {
+  word-break:keep-all;
+  width: 35.1rem;
+  height: 7rem;
+  background-color: black;
+  font-size: 1.6rem;
+  color: #fff;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-family:"April16th-Promise";
+  text-align: left;
+  border : 0.2rem solid #000000;
+  padding: 0.6rem 1.2rem;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  visibility: hidden;
 }
+
+.otf_btn:hover .tooltiptext {
+  visibility:visible;
+}
+
+.ttf_btn:hover .tooltiptext2 {
+  visibility:visible;
+} 
 
 
 .loop-slider-wrap{
@@ -843,5 +885,9 @@ header, nav, section, article, aside, footer {display:block;}
 }
 
 .footer_m{
+  display: none;
+}
+
+.title7_div_m{
   display: none;
 }
