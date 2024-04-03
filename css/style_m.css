@@ -575,6 +575,8 @@ header, nav, section, article, aside, footer {display:block;}
 
 .preview_div{
   margin-top: 4rem;
+  height: auto;
+  display: flex;
 }
 
 .preview_typing{
@@ -594,6 +596,11 @@ header, nav, section, article, aside, footer {display:block;}
   background-size:100% 100%, 100% 100%; 
   background-size: cover;
   background-position:0px 0px ,0px 0px;
+  /* flex-basis: auto; */
+  /* line-height: 33.5rem; */
+  /* display: table-cell; */
+  /* vertical-align: middle; */
+  padding:40% 0;
 }
 
 .button_div{
