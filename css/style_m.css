@@ -575,8 +575,8 @@ header, nav, section, article, aside, footer {display:block;}
 
 .preview_div{
   margin-top: 4rem;
-  height: auto;
-  display: flex;
+  /* height: auto;
+  display: flex; */
 }
 
 .preview_typing{
