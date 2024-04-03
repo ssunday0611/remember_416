@@ -333,6 +333,22 @@ function myFunction2(e,num) {
 }
 
 $(".img-comp-slider").on("click", function () {
-  alert("클릭");
   $(".comp_txt").css("display","none");
 });
+
+window.onscroll = function () {
+  console.log(document.body.scrollHeight, window.scrollY, window.innerHeight);
+  
+  const totalPageHeight = document.body.scrollHeight;
+  const scrollPoint = window.scrollY + window.innerHeight;
+
+  console.log(scrollPoint,totalPageHeight);
+  // check if we hit the bottom of the page
+  if (scrollPoint >= totalPageHeight) {
+      $(".section1").css("visibility","hidden");
+      $(".section1_m").css("visibility","hidden");
+  }else{
+    $(".section1").css("visibility","visible");
+    $(".section1_m").css("visibility","visible");
+  }
+}
