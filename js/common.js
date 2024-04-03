@@ -216,16 +216,17 @@ $(document).ready(function () {
     $(".customRange1").val("50");
   });
 
-  $(".save").on("click", function () {
+  $("#save").on("click", function () {
     downImg(1);
   });
 
-  $(".save2").on("click", function () {
+  $("#save2").on("click", function () {
     downImg(2);
   });
 
   function downImg(num){
-    html2canvas ($("#preview_typing2") [0]).then(function (canvas) {
+    alert("#preview_typing"+num);
+    html2canvas ($("#preview_typing"+num) [0]).then(function (canvas) {
       var myImage = canvas.toDataURL();
       downloadURI(myImage, "416_image.png");
     });
