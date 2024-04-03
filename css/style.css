@@ -324,6 +324,10 @@ header, nav, section, article, aside, footer {display:block;}
   width: 100rem;
 }
 
+#title_video_m{
+  display: none;
+}
+
 .img-comp-img {
   /* margin:auto; */
   width: 100rem;
