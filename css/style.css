@@ -886,6 +886,9 @@ header, nav, section, article, aside, footer {display:block;}
 
 .footer_m{
   display: none;
+  position:fixed;
+  bottom:0%;
+  
 }
 
 .title7_div_m{
