@@ -107,7 +107,8 @@ header, nav, section, article, aside, footer {display:block;}
 
 .section1_m{
   display:flex;
-  position:fixed;
+  position: relative;
+  height: 100vh;
   z-index: -1;
   bottom:0%;
 }
