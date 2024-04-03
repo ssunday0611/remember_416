@@ -78,8 +78,8 @@ function initComparisons() {
       img.style.width = x + "px";
       /* Position the slider: */
       slider.style.left = img.offsetWidth - (slider.offsetWidth / 2) + "px";
-      $(".comp_txt").css({"left" : x-500+"px"});
-      $(".comp_txt2").css({"left" : x-500+"px"});
+      $(".comp_txt").css({"left" : x-497+"px"});
+      $(".comp_txt2").css({"left" : x-489+"px"});
     }
   }
 }
@@ -343,6 +343,13 @@ window.onscroll = function () {
   const scrollPoint = window.scrollY + window.innerHeight;
 
   console.log(scrollPoint,totalPageHeight);
+
+  if( window.scrollY > 0 ){
+    $(".header2").css("border-bottom","solid 0.1rem #ededed")
+  }else{
+    $(".header2").css("border-bottom","")
+  }
+
   // check if we hit the bottom of the page
   if (scrollPoint >= totalPageHeight) {
       $(".section1").css("visibility","hidden");
