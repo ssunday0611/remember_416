@@ -217,11 +217,15 @@ $(document).ready(function () {
   });
 
   $(".save").on("click", function () {
-    downImg();
+    downImg(1);
   });
 
-  function downImg(){
-    html2canvas ($("#preview_typing") [0]).then(function (canvas) {
+  $(".save2").on("click", function () {
+    downImg(2);
+  });
+
+  function downImg(num){
+    html2canvas ($("#preview_typing"+num) [0]).then(function (canvas) {
       var myImage = canvas.toDataURL();
       downloadURI(myImage, "416_image.png");
     });
