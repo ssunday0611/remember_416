@@ -78,8 +78,8 @@ function initComparisons() {
       img.style.width = x + "px";
       /* Position the slider: */
       slider.style.left = img.offsetWidth - (slider.offsetWidth / 2) + "px";
-      $(".comp_txt").css({"left" : x-497+"px"});
-      $(".comp_txt2").css({"left" : x-489+"px"});
+      // $(".comp_txt").css({"left" : x-497+"px"});
+      // $(".comp_txt2").css({"left" : x-489+"px"});
     }
   }
 }
