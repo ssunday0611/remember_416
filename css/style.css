@@ -435,7 +435,7 @@ header, nav, section, article, aside, footer {display:block;}
   border : #FFE100 !important;
 }
 
-.preview_div{
+.preview_div2{
   display:inline-block;
   margin:auto;
 }
@@ -690,7 +690,7 @@ header, nav, section, article, aside, footer {display:block;}
   width: 8rem;
   height : 8rem;
   border : 0.2rem solid #DDDDDD;
-  color: #DDDDDD;
+  color: #CCCCCC;
   line-height:8rem;
   font-size:2.4rem;
   cursor: pointer;
@@ -890,6 +890,12 @@ header, nav, section, article, aside, footer {display:block;}
 	display: inline;
 	overflow: hidden;
   margin-left: 2rem;
+}
+
+
+.slide-area ul li img{
+	width: 45.5rem;
+	height: 45.5rem;
 }
 
 .footer_m{
