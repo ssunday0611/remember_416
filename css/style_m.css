@@ -613,6 +613,10 @@ header, nav, section, article, aside, footer {display:block;}
   padding:40% 0;
 }
 
+.preview_typing div{
+  font-family: "April16th-Life";
+}
+
 .button_div{
   margin-top: 2.8rem;
 }

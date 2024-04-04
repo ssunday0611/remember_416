@@ -522,6 +522,10 @@ header, nav, section, article, aside, footer {display:block;}
   background-position:0px 0px ,0px 0px;
 }
 
+.preview_typing div{
+  font-family: "April16th-Life";
+}
+
 
 .left{
   padding-left : 3rem;

@@ -169,6 +169,7 @@ $(document).ready(function () {
     $(".weight-box").removeClass("active");
     $(this).addClass("active");
     $(".preview_typing").css("font-family",$(this).attr("font-weight"));
+    $(".preview_typing div").css("font-family",$(this).attr("font-weight"));
   });
 
   $(".background-box").on("click", function () {
