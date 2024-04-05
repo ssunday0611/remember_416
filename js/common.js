@@ -147,12 +147,16 @@ $(document).ready(function () {
     "b",
     "명",
     "f"
-]
+  ]
 
   //grid 그리기
   for (i =0; i<arr.length; i++){
     $(".life_preview").append("<span class='item'>"+arr[i]+"</span>");
   }
+
+  const arr2 = ["바다에도 봄이 온다","슬픔의 기억력으로","단단해지는 마음","모두의 일곱 해"];
+  const ran_num = Math.floor(Math.random() * 4);
+  $(".preview_typing").text(arr2[ran_num]);
 
   $(".navmenu").on("click", function () {
     $(".navmenu").removeClass("active_txt");
@@ -227,7 +231,6 @@ $(document).ready(function () {
 
   function downImg(num){
     $(".preview_typing").css("border","none");
-    alert("없앰");
     html2canvas ($("#preview_typing"+num) [0]).then(function (canvas) {
       var myImage = canvas.toDataURL();
       downloadURI(myImage, "416_image.png");
