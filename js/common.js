@@ -226,7 +226,8 @@ $(document).ready(function () {
   });
 
   function downImg(num){
-    $(".preview_typing").css("border","");
+    $(".preview_typing").css("border","none");
+    alert("없앰");
     html2canvas ($("#preview_typing"+num) [0]).then(function (canvas) {
       var myImage = canvas.toDataURL();
       downloadURI(myImage, "416_image.png");
