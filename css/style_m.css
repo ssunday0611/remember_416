@@ -43,6 +43,7 @@ header, nav, section, article, aside, footer {display:block;}
 .active_txt{
   color:#FFE100 !important;
   opacity: 100% !important;
+  text-decoration: none;
 }
 
 .active2{
@@ -410,6 +411,7 @@ header, nav, section, article, aside, footer {display:block;}
 }
 
 .section3{
+  scroll-margin-top : 12rem;
   margin-top : 12rem;
   text-align: center;
 }

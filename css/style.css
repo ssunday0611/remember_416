@@ -702,6 +702,7 @@ header, nav, section, article, aside, footer {display:block;}
 
 /* 다운로드 */
 .section3{
+  scroll-margin-top : 13rem;
   margin-top : 19.4rem;
   text-align: center;
   width:100vw;
