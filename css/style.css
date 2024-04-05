@@ -631,7 +631,7 @@ header, nav, section, article, aside, footer {display:block;}
 }
 
 #img1{
-  background-image: url(../image/background_btn1.png);
+  background-image: url("https://drive.google.com/uc?id=1GoPkWPy8od53lXe0eA3mykzeE8Df3CCC");
   background-size: cover;
   margin-right: 1.267rem;
   border : 0.2rem solid #DDDDDD;
