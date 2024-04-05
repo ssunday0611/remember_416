@@ -231,6 +231,7 @@ $(document).ready(function () {
       var myImage = canvas.toDataURL();
       downloadURI(myImage, "416_image.png");
     });
+    $(".preview_typing").css("border","0.2rem solid #DDDDDD");
   }
 
   function downloadURI(uri, name){
