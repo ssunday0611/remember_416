@@ -226,6 +226,7 @@ $(document).ready(function () {
   });
 
   function downImg(num){
+    $(".preview_typing").css("border","");
     html2canvas ($("#preview_typing"+num) [0]).then(function (canvas) {
       var myImage = canvas.toDataURL();
       downloadURI(myImage, "416_image.png");
@@ -338,12 +339,12 @@ $(".img-comp-slider").on("click", function () {
 });
 
 window.onscroll = function () {
-  console.log(document.body.scrollHeight, window.scrollY, window.innerHeight);
+  // console.log(document.body.scrollHeight, window.scrollY, window.innerHeight);
   
   const totalPageHeight = document.body.scrollHeight;
   const scrollPoint = window.scrollY + window.innerHeight;
 
-  console.log(scrollPoint,totalPageHeight);
+  // console.log(scrollPoint,totalPageHeight);
 
   if( window.scrollY > 0 ){
     $(".header2").css("border-bottom","solid 0.1rem #ededed")

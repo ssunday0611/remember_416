@@ -737,7 +737,7 @@ header, nav, section, article, aside, footer {display:block;}
   display:inline-block;
 }
 
-.download_div > .left{
+.download_div > .left2{
   float:left;
   width: 42rem;
   height: 12.75rem;
