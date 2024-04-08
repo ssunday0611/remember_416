@@ -17,17 +17,17 @@ html{
 
 @font-face{
   font-family:"April16th-Life";
-	src:url("../font/April16th-Life.woff");
+	src:url("https://storage.googleapis.com/416foundation/April16th/remember_416/font/April16th-Life.woff");
 }
 
 @font-face{
   font-family:"April16th-Promise";
-	src:url("../font/April16th-Promise.woff");
+	src:url("https://storage.googleapis.com/416foundation/April16th/remember_416/font/April16th-Promise.woff");
 }
 
 @font-face{
   font-family:"April16th-Safety";
-	src:url("../font/April16th-Safety.woff");
+	src:url("https://storage.googleapis.com/416foundation/April16th/remember_416/font/April16th-Safety.woff");
 }
 
 body{
@@ -278,7 +278,7 @@ header, nav, section, article, aside, footer {display:block;}
   width: 4.5rem;
   height: 150%;
   /* background-color: #2196F3; */
-  background-image: url(../image/compare_btn_m.png);
+  background-image: url(https://storage.googleapis.com/416foundation/April16th/remember_416/image/compare_btn_m.png);
   /* opacity: 0.7;
   border-radius: 50%; */
   background-size: cover;
@@ -535,28 +535,28 @@ header, nav, section, article, aside, footer {display:block;}
 }
 
 #img1{
-  background-image: url(../image/background_btn1.png);
+  background-image: url(https://storage.googleapis.com/416foundation/April16th/remember_416/image/background_btn1.png);
   background-size: cover;
   margin-right: 1.567rem;
   border : 0.2rem solid #DDDDDD;
 }
 
 #img2{
-  background-image: url(../image/background_btn2.png);
+  background-image: url(https://storage.googleapis.com/416foundation/April16th/remember_416/image/background_btn2.png);
   background-size: cover;
   margin-right: 1.567rem;
   border : 0.2rem solid #DDDDDD;
 }
 
 #img3{
-  background-image: url(../image/background_btn3.png);
+  background-image: url(https://storage.googleapis.com/416foundation/April16th/remember_416/image/background_btn3.png);
   background-size: cover;
   margin-right: 1.567rem;
   border : 0.2rem solid #DDDDDD;
 }
 
 #img4{
-  background-image: url(../image/background_btn4.png);
+  background-image: url(https://storage.googleapis.com/416foundation/April16th/remember_416/image/background_btn4.png);
   background-size: cover;
   border : 0.2rem solid #DDDDDD;
 }
@@ -604,7 +604,7 @@ header, nav, section, article, aside, footer {display:block;}
   flex-direction: column;
   justify-content: center;
   overflow:hidden;
-  background-image:url(../image/background_img.png), url(../image/background_img1.png);
+  background-image:url(https://storage.googleapis.com/416foundation/April16th/remember_416/image/background_img.png), url(https://storage.googleapis.com/416foundation/April16th/remember_416/image/background_img1.png);
   background-size:100% 100%, 100% 100%; 
   background-size: cover;
   background-position:0px 0px ,0px 0px;
@@ -699,7 +699,7 @@ header, nav, section, article, aside, footer {display:block;}
 .otf_btn{
   width:33.5rem;
   height: 6rem;
-  background-image: url(../image/otf_btn.png);
+  background-image: url(https://storage.googleapis.com/416foundation/April16th/remember_416/image/otf_btn.png);
   background-size: cover;
   cursor: pointer;
 }
@@ -708,7 +708,7 @@ header, nav, section, article, aside, footer {display:block;}
   margin-top: 1.2rem;
   width:33.5rem;
   height: 6rem;
-  background-image: url(../image/ttf_btn.png);
+  background-image: url(https://storage.googleapis.com/416foundation/April16th/remember_416/image/ttf_btn.png);
   background-size: cover;
   cursor: pointer;
 }
@@ -724,7 +724,7 @@ header, nav, section, article, aside, footer {display:block;}
 
 .woff_btn{
   float:left;
-  background-image: url(../image/woff_btn.png);
+  background-image: url(https://storage.googleapis.com/416foundation/April16th/remember_416/image/woff_btn.png);
   background-size: cover;
   width: 16.25rem;
   height: 6rem;
@@ -734,7 +734,7 @@ header, nav, section, article, aside, footer {display:block;}
 
 .woff2_btn{
   float:left;
-  background-image: url(../image/woff2_btn.png);
+  background-image: url(https://storage.googleapis.com/416foundation/April16th/remember_416/image/woff2_btn.png);
   background-size: cover;
   width: 16.25rem;
   height: 6rem;
