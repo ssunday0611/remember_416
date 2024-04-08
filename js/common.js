@@ -182,7 +182,7 @@ $(document).ready(function () {
     $(this).addClass("active2");
     $("p[img-src='"+$(this).attr("img-src")+"']").addClass("active_txt");
     if($(this).attr("img-src") != "imgUpload"){
-      $(".preview_typing").css("background-image",  "url(./image/background_img.png), url("+$(this).attr("img-src")+".png)" );
+      $(".preview_typing").css("background-image",  "url(https://storage.googleapis.com/416foundation/April16th/remember_416/image/background_img.png), url("+$(this).attr("img-src")+".png)" );
     }
     //직접 업로드
     else{
@@ -195,7 +195,7 @@ $(document).ready(function () {
     var file = event.target.files[0];
     var reader = new FileReader(); 
     reader.onload = function(e) {
-      $(".preview_typing").css({"background-image":"url(./image/background_img.png), url("+ e.target.result+")"}); 			
+      $(".preview_typing").css({"background-image":"url(https://storage.googleapis.com/416foundation/April16th/remember_416/image/background_img.png), url("+ e.target.result+")"}); 			
       $(".preview_typing").setAttribute('crossorigin', 'anonymous');	
     }
     reader.readAsDataURL(file);
