@@ -244,9 +244,10 @@ $(document).ready(function () {
         alert("카카오톡"+uri);
         var link = document.createElement ("a")
         link.setAttribute('target','_blank')
-        link.download = name;
+        // link.download = name;
         link.href = uri;
         document.body.appendChild(link);
+        link.click();
     }else{
         var link = document.createElement ("a");
         link.download = name;
