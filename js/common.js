@@ -241,8 +241,7 @@ $(document).ready(function () {
   function downloadURI(uri, name){
 
     if (navigator.userAgent.indexOf('KAKAO') >= 0){
-        alert("카카오톡"+uri);
-        window.open(uri);
+        const win = window.open(uri, '_blank');
     }else{
         var link = document.createElement ("a");
         link.download = name;
