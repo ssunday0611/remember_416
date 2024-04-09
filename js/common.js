@@ -233,30 +233,27 @@ $(document).ready(function () {
     $(".preview_typing").css("border","none");
     html2canvas ($("#preview_typing"+num) [0]).then(function (canvas) {
       var myImage = canvas.toDataURL();
-      // downloadURI(myImage, "416_image.png");
-
-      alert("그려");
-      var imageWin = new Image();
-      imageWin = window.open("", "", "width=600px, height=600px");
-      imageWin.document.write("<html><body style='margin:0'>");
-      imageWin.document.write("<img src='" + myImage + "' border=0>");
-      imageWin.document.write("</body><html>");
-      imageWin.document.title = "416_image.png";
+      downloadURI(myImage, "416_image.png");
     });
     $(".preview_typing").css("border","0.2rem solid #DDDDDD");
   }
 
   function downloadURI(uri, name){
 
-    // if (navigator.userAgent.indexOf('KAKAO') >= 0){
-    //   alert("카카오");
-    // }else{
-    //     var link = document.createElement ("a");
-    //     link.download = name;
-    //     link.href = uri;
-    //     document.body.appendChild(link);
-    //     link.click();
-    // }
+    if (navigator.userAgent.indexOf('KAKAO') >= 0){
+      var imageWin = new Image();
+      imageWin = window.open("", "", "width=600px, height=600px");
+      imageWin.document.write("<html><body style='margin:0'>");
+      imageWin.document.write("<img src='" + uri + "' border=0>");
+      imageWin.document.write("</body><html>");
+      imageWin.document.title = "416_image.png";
+    }else{
+        var link = document.createElement ("a");
+        link.download = name;
+        link.href = uri;
+        document.body.appendChild(link);
+        link.click();
+    }
     
   }
 
