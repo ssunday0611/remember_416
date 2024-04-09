@@ -241,10 +241,14 @@ $(document).ready(function () {
   function downloadURI(uri, name){
 
     if (navigator.userAgent.indexOf('KAKAO') >= 0){
-        alert("카카오톡")
-        window.open(uri);
-    }else{
+        alert("카카오톡"+uri);
         var link = document.createElement ("a")
+        link.setAttribute('target','_blank')
+        link.download = name;
+        link.href = uri;
+        document.body.appendChild(link);
+    }else{
+        var link = document.createElement ("a");
         link.download = name;
         link.href = uri;
         document.body.appendChild(link);
