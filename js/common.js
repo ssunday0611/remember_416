@@ -233,11 +233,15 @@ $(document).ready(function () {
     $(".preview_typing").css("border","none");
     html2canvas ($("#preview_typing"+num) [0]).then(function (canvas) {
       var myImage = canvas.toDataURL();
-      downloadURI(myImage, "416_image.png");
+      // downloadURI(myImage, "416_image.png");
 
       alert("그려");
-      var win = window.open();
-      win.document.write('<iframe src="' + base64URL  + '" frameborder="0" style="border:0;top:0px; left:0px; bottom:0px; right:0px; width:100%; height:100%;" allowfullscreen> </iframe>');
+      var imageWin = new Image();
+      imageWin = window.open("", "", "width=600px, height=600px");
+      imageWin.document.write("<html><body style='margin:0'>");
+      imageWin.document.write("<img src='" + myImage + "' border=0>");
+      imageWin.document.write("</body><html>");
+      imageWin.document.title = "416_image.png";
     });
     $(".preview_typing").css("border","0.2rem solid #DDDDDD");
   }
