@@ -234,21 +234,24 @@ $(document).ready(function () {
     html2canvas ($("#preview_typing"+num) [0]).then(function (canvas) {
       var myImage = canvas.toDataURL();
       downloadURI(myImage, "416_image.png");
+
+      alert("그려");
+      window.open(canvas.toDataURL(), "Capture","width=" + canvas.width +",height="+canvas.height);
     });
     $(".preview_typing").css("border","0.2rem solid #DDDDDD");
   }
 
   function downloadURI(uri, name){
 
-    // if (navigator.userAgent.indexOf('KAKAO') >= 0){
-        const win = window.open(uri, '_blank');
-    // }else{
-    //     var link = document.createElement ("a");
-    //     link.download = name;
-    //     link.href = uri;
-    //     document.body.appendChild(link);
-    //     link.click();
-    // }
+    if (navigator.userAgent.indexOf('KAKAO') >= 0){
+      alert("카카오");
+    }else{
+        var link = document.createElement ("a");
+        link.download = name;
+        link.href = uri;
+        document.body.appendChild(link);
+        link.click();
+    }
     
   }
 
