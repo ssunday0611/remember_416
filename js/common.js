@@ -235,24 +235,22 @@ $(document).ready(function () {
       var myImage = canvas.toDataURL();
       downloadURI(myImage, "416_image.png");
     });
-    if (navigator.userAgent.indexOf('KAKAO') >= 0){
-      farwindow = window.open('','Links','width='+100+', height='+100+', toolbar=0, scrollbars=0, resizable=no'); 
-      if (farwindow != null) { 
-        if (farwindow.opener == null) { 
-        farwindow.opener = self; 
-        } 
-        farwindow.location.href = myImage; 
-      } 
-    }
     $(".preview_typing").css("border","0.2rem solid #DDDDDD");
   }
 
   function downloadURI(uri, name){
-    var link = document.createElement ("a")
-    link.download = name;
-    link.href = uri;
-    document.body.appendChild(link);
-    link.click();
+
+    if (navigator.userAgent.indexOf('KAKAO') >= 0){
+        alert("카카오톡")
+        window.open(uri);
+    }else{
+        var link = document.createElement ("a")
+        link.download = name;
+        link.href = uri;
+        document.body.appendChild(link);
+        link.click();
+    }
+    
   }
 
 });
