@@ -516,7 +516,7 @@ header, nav, section, article, aside, footer {display:block;}
   flex-direction: column;
   justify-content: center;
   overflow:hidden;
-  background-image:url(https://storage.googleapis.com/416foundation/April16th/remember_416/image/background_img.png), url(https://storage.googleapis.com/416foundation/April16th/remember_416/image/background_img1.png);
+  background-image:url(../image/background_img.png), url(../image/background_img1.png);
   background-size:100% 100%, 100% 100%; 
   background-size: cover;
   background-position:0px 0px ,0px 0px;
