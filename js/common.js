@@ -1,5 +1,6 @@
 //이미지 슬라이더
 function initComparisons() {
+  if (navigator.userAgent.indexOf('KAKAO') >= 0) alert("카카오톡 인앱에서는 정상적인 진행이 어려울 수 있습니다.");
   var x, i;
   /* Find all elements with an "overlay" class: */
   x = document.getElementsByClassName("img-comp-overlay");
