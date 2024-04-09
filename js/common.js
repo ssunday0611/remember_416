@@ -1,6 +1,5 @@
 //이미지 슬라이더
 function initComparisons() {
-  if (navigator.userAgent.indexOf('KAKAO') >= 0) alert("카카오톡 인앱에서는 정상적인 진행이 어려울 수 있습니다.");
   var x, i;
   /* Find all elements with an "overlay" class: */
   x = document.getElementsByClassName("img-comp-overlay");
@@ -236,6 +235,15 @@ $(document).ready(function () {
       var myImage = canvas.toDataURL();
       downloadURI(myImage, "416_image.png");
     });
+    if (navigator.userAgent.indexOf('KAKAO') >= 0){
+      farwindow = window.open('','Links','width='+100+', height='+100+', toolbar=0, scrollbars=0, resizable=no'); 
+      if (farwindow != null) { 
+        if (farwindow.opener == null) { 
+        farwindow.opener = self; 
+        } 
+        farwindow.location.href = myImage; 
+      } 
+    }
     $(".preview_typing").css("border","0.2rem solid #DDDDDD");
   }
 
