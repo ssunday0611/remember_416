@@ -222,10 +222,20 @@ $(document).ready(function () {
   });
 
   $("#save").on("click", function () {
+    gtag('event', 'click', {
+        'event_category': '10th_img_save',
+        'event_label': '10th_img_save',
+        'value': 1 // 클릭 수량 (옵션)
+    });
     downImg(1);
   });
 
   $("#save2").on("click", function () {
+    gtag('event', 'click', {
+      'event_category': '10th_img_save',
+      'event_label': '10th_img_save',
+      'value': 1 // 클릭 수량 (옵션)
+  });
     downImg(2);
   });
 
